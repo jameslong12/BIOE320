@@ -1,0 +1,9 @@
+theme: minima
+title: "BIOE 385: Bioinstrumentation Lab"
+
+description: "Course materials and website for BIOE 385 Fall 2022."
+
+header_pages:
+  - Resources.md
+  - OIA.md
+  - EMG.md
