@@ -157,7 +157,7 @@ Before beginning the lab activity, open the BIOPAC tutorial that can be found in
 			\item What are the "max" and "min" for the waveform on ECG?
 			\item What are the "max" and "min" for the waveform on Pulse?
 			\item What do the "max" and "min" values represent?
-			\item Try out the options for "area", "P-P", "integral", "stdev", and two additional ones (see Table [add table at end] for available options and explanations). Explain in your own words what they are and the resulting value.
+			\item Try out the options for "area", "P-P", "integral", "stdev", and two additional ones (see Table \ref{table_defs} at the end of this protocol for available options and explanations). Describe a physiological example when each of these measurements may be useful.
 		\end{enumerate}
 \end{enumerate}
 
@@ -214,4 +214,139 @@ Using the marker tools on the right edge of the marker region (Fig. \ref{marker_
 	\item How do you insert an event marker after data have been recorded? Do this as practice.
 \end{enumerate}
 
+\section*{Journal}
+The Review Saved Data mode incorporates a Journal feature so you can type notes or copy measurements from previously saved data. You can also copy data directly to the Journal. The Journal needs to be the active window for its options to appear.
+\begin{enumerate}
+	\item Access the Option menu (Fig. \ref{journal}) by selecting \textit{Journal Preferences} from the \textit{File} menu. This window will allow you to control formatting for text, measurements, and wave data.
+		\begin{figure}[h]
+		\includegraphics[width=0.6\textwidth]{../images/BIOPAC_14.jpg}
+		\centering
+		\caption{Journal preferences}
+		\label{journal}
+		\end{figure}
+
+	\item To paste a pop-up measurement into the Journal:
+		\begin{enumerate}
+			\item Select the channel you want to measure by clicking on it with the Selection tool or use the cursor to pick the correct channel number in the boxes to the left of the pop-up measurements.
+			\item Choose the appropriate pop-up measurement (e.g. Max, Min).
+			\item Use the I-beam tool to select the portion of the wave you are interested in. The pop-up measurement values will update instantly based on the selected area you have chosen with the I-beam tool.
+			\item Pull down the Edit menu and select Journal $\rightarrow$ Paste Measurement. Alternatively, you can use Ctrl+M.
+		\end{enumerate}
+	\end{enumerate}
+
+\section*{Practice}
+	\begin{figure}[h]
+		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_15.jpg}
+		\centering
+		\caption{Practice data}
+		\label{practice}
+		\end{figure}
+	
+Using the data provided (Sample Data-L07), display the waveforms contained between 0.2 and 4.4 seconds (Fig.\ref{practice}). Answer the following questions for the pulse data:
+		\begin{enumerate}
+			\item Maximum values of:
+				\begin{enumerate}
+					\item First wave?
+					\item Second wave?
+					\item Third wave?
+					\item Fourth wave?
+				\end{enumerate}
+			\item Frequency of single waveform?
+			\item Minimum and maximum amplitudes found between the first and fourth peak?
+			\item Interval of time between:
+				\begin{enumerate}
+					\item First and fourth peak?
+					\item Third and fourth peak?
+				\end{enumerate}
+			\item Briefly describe the function of the following tools:
+				\begin{enumerate}
+					\item Selection tool
+					\item I-Beam tool
+					\item Zoom tool
+				\end{enumerate}
+			\item You have lost track of where you are in the data due to zooming, scrolling, etc. List 2 sequential steps you can take to make sure the complete data file is on the screen.
+		\end{enumerate}
+\section*{Preparation for Post-Lab}
+Save data from the file you used today (at least 15-20 seconds) as a journal file. Make sure you have data for both channels and email it to yourself.
+
+\pagebreak
+\begin{table}[h!]
+	\centering
+	\caption{Measurement tools and definitions}
+	\label{table_defs}
+\begin{tabular}[h!]{p{0.2\linewidth}p{0.75\linewidth}}
+\toprule
+Measurement tool & Definition\\
+\midrule
+area & Computes the total area among the waveform and the straight line that is drawn between the endpoints. Expressed in terms of amplitude units $\times$ horizontal units.\\
+\midrule
+BPM & Calculates the difference in time between the first and last selected points, and divides this value into 60 seconds/minute to extrapolate BPM. If more than one beat is selected, it \textit{will not} calculate the average BPM in the selected area.\\
+	& \begin{info}
+ 	In order to get an accurate BPM value, you must select an area with the I-beam cursor that represents one complete beat-to-beat interval. One way to do this is to select an area that goes from the peak of one cycle's R wave to the peak of the next cycle's R wave.
+ 	\end{info}\\
+\midrule
+calculate & Used to perform a calculation using the other measurement results. For example, you can divide the mean pressure by the mean flow\\
+	& When \textbf{calculate} is selected, the channel selection box disappears. The result box will read "off" until a calculation is performed, and then it will display the result of the calculation. As you change the selected area, the calculation will update automatically.\\
+	& \\
+	& To perform a calculation, Ctrl+Click (or right mouse button click) on the \textbf{calculate} measurement type box to generate the "Waveform Arithmetic" dialog. Use the pull-down menus to select the sources and operand.\\
+	& \\
+	& Measurements are listed by their position in the measurement display grid. Only active, available channels appear in the Source menu. You cannot perform a calculation using the result of another calculation, so calculated measurement channels are not available in the Source menu.\\
+	& \\
+	& The Constant entry box is activated when you select "Source: K, constant", and it allows you to define the constant value to be used in the calculation. To add units to the calculation result, select the Units entry box and define the unit's abbreviation.\\
+\midrule
+delta & Computes the difference in amplitude between the last point and the first point of the selected area.\\
+\midrule
+delta S & Computes the difference in sample points between the end and beginning of the selected area.\\
+\midrule
+delta T & Computes the difference in time between the end and beginning of the selected area.\\
+\midrule
+freq & Converts the time segment between the endpoints of the selected area to frequency in cycles/sec. The result is given in units of Hz. It will not calculate the correct frequency if the selected area contains more than one cycle, and you must carefully select the start and end of the cycle.\\
+\midrule
+integral & Computes the integral value of the data samples between the endpoints of the selected area. The result is expressed in terms of amplitude units $\times$ horizontal units.\\
+\midrule
+max & Finds the maximum amplitude value within the selected area.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t!]
+	\centering
+\begin{tabular}[t!]{p{0.2\linewidth}p{0.75\linewidth}}
+\toprule
+Measurement tool & Definition\\
+\midrule
+median & Find the median value from the selected area.\\
+	& \begin{warn}
+		The median calculation is processor-intensive and can take a long time, so only select "median" when you are ready to calculate.
+	\end{warn}\\
+	\midrule
+mean & Computes the mean amplitude value or average of the data samples between the endpoints of the selected area\\
+\midrule
+min & Finds the minimum amplitude value within the selected area.\\
+\midrule
+none & Turns off the measurement channel and no result is provided.\\
+\midrule
+P-P & Finds the maximum value in the selected area and subtracts the minimum value found in the selected area.\\
+\midrule
+samples & Shows the exact sample number of the selected waveform at the cursor position.\\
+\midrule
+slope & Uses the endpoints of the selected area to determine the difference in magnitude divided by the time interval. This value is normally expressed in unit change per second (rather than sample points) since high sampling rates can artificially deflate the value of the slope. When an area is selected, the slope measurement computes the slope of the line drawn as a best fit for all selected data points.\\
+\midrule
+stddev & Computes the standard deviation value of the data samples in the selected range.\\
+\midrule
+T @ max & Shows the tine of the data point that represents the maximum value of the data samples between the endpoints of the selected area.\\
+\midrule
+T @ median & Shows the tine of the data point that represents the median value of the data samples between the endpoints of the selected area.\\
+	& \begin{warn}
+		The median calculation is processor-intensive and can take a long time, so only select "median" when you are ready to calculate.
+	\end{warn}\\
+\midrule
+T @ min & Shows the tine of the data point that represents the minimum value of the data samples between the endpoints of the selected area.\\
+\midrule
+x-axis: T (time) & Shows the exact time of the selected waveform at the cursor position. If a range of values is selected, then the measurement will indicate the time at the last position of the cursor.\\
+\midrule
+value & Displays the amplitude value for the channel at the point selected by the I-beam cursor. If a single point is selected, the value is for that point. If an area is selected, the value is the endpoint of the selected area.\\
+\bottomrule
+\end{tabular}
+\end{table}
 \end{document}
