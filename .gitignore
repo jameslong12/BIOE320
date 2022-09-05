@@ -1,12 +1,9 @@
 *.DS_Store
 .texpadtmp/
-EMG.pdf
-EMG.tex
-OIA.pdf
-OIA.tex
 index.pdf
 index.tex
 README.tex
 README.pdf
 Resources.tex
 Resources.pdf
+old_course_files/
