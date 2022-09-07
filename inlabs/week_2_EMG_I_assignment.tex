@@ -14,7 +14,7 @@
 %	ASSIGNMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Week 2: Electromyography (EMG) I}
+\title{Week 2 In-Lab}
 \author{BIOE 320 Systems Physiology Laboratory} 
 \date{}
 %----------------------------------------------------------------------------------------
@@ -23,211 +23,115 @@
 \large
 \maketitle
 
-\section*{Objectives}
-\begin{enumerate}
-	\item To record and compare maximum clench strengths for dominant and non-dominant arms using the BIOPAC system
-	\item To record and compare skeletal muscle tonus measurements in dominant and non-dominant arms
-	\item To record, analyze, and explain EMG signals for several daily activities
-\end{enumerate}
+\textbf{Student Name:}\hfill 	\textbf{Total Grade:\ \ \ \ /25}\vspace{0.5cm}
 
-\section*{Background}
-Muscles convert chemical energy into mechanical work. The mechanical workachieved by muscles is called a contraction. Muscle contractions occur after an action potential is sent from the brain to motor neurons which chemically signal the desired muscle fibers to contract. The motor neuron and all the associated muscle fibers that control the contraction and relaxation of a specific muscle are collectively called \textit{motor unit} (Fig. \ref{motor_unit}).
+\textbf{Student Name:}\hfill 	\textbf{Total Grade:\ \ \ \ /25}\vspace{0.5cm}
 
-\begin{figure}[h]
-\includegraphics[width=0.5\textwidth]{../images/EMG_I_1.jpg}
-\centering
-\caption{Motor unit.}
-\label{motor_unit}
-\end{figure}
-
-\subsection*{Motor Unit Recruitment}
-
-\begin{figure}[h]
-\includegraphics[width=0.8\textwidth]{../images/EMG_I_2.jpg}
-\centering
-\caption{Increase in the muscle twitch force via the increased recruitment of motor fibers by increasing the strength of the external stimulus.}
-\label{force}
-\end{figure}
-
-The strength of muscle contractions can be modulated through two primary methods. The first method (spatial summation) occurs through the gradual \textit{recruitment of motor units}, as shown in Fig. \ref{force}. The body recruits its weakest (smallest) motor units first, and successively recruits stronger (larger) motor units until the desired force is achieved. Motor unit size is defined by the number of muscle fibers to which a motor neuron is connected. Large motor units have thousands of muscle fibers, while small motor units may have as little as ten muscle fibers. Small muscle fibers are typically utilized for activities that require high precision.
-
-\begin{figure}[h]
-\includegraphics[width=0.8\textwidth]{../images/EMG_I_3.jpg}
-\centering
-\caption{Increasing the frequency of stimulation at low frequencies only increases the frequency of the same twitch wave form. When the period of the stimulation frequency is shorter than the period of the twitch, force begins to summate.}
-\label{freq}
-\end{figure}
-
-The second factor (temporal summation) contributing to the magnitude of muscle contraction is the \textit{rate of firing}. By increasing action potential firing rate, the amount of time the muscle fibers have to relax is decreased, and thus the incremental forces produced from each muscle fiber contraction accumulate to a greater force, as shown in Fig. \ref{freq}. An increase in action potential frequency that results in a state of sustained muscular contractions without periods of relaxation of the muscle fibers, is called tetanus.
-
-\subsection*{Muscle Tone (Tonus)}
-Muscle tone is the partial contractile state muscles maintain in order to preserve the structural integrity of all of the body’s organs and extremities. Although we will be dealing only with skeletal muscles in this lab, cardiac and smooth muscles also possess a level of tone which functions to maintain structural integrity and to control pressures and flow of bodily fluids.
-
-\section*{Required Supplies}
-\begin{itemize}
-	\item BIOPAC student labs lesson L01: EMG I
-	\item BIOPAC MP3X data acquisition unit
-	\item BIOPAC electrode lead set
-	\item BIOPAC disposable vinyl electrodes
-	\item Optional but useful: alcohol wipes, abrasive pads, physiology tape, electrode gel
-\end{itemize}
-
-\section*{Setting Up the Software}
-\begin{enumerate}
-	\item Turn on the MP3X acquisition unit by flipping the switch found on the back panel.
-	\item Launch the BIOPAC software by clicking on the BSL Lessons 3.7.6 icon that can be found on your desktop. Select L01-EMG-1 as shown in Fig. \ref{lesson}.
-		\begin{figure}[h]
-	\includegraphics[width=0.6\textwidth]{../images/EMG_I_4.jpg}
-		\centering
-		\caption{Selecting BIOPAC lesson L01}
-		\label{lesson}
-		\end{figure}
-		
-	\item When the prompt asking for your file name appears, name the file using your name and a description about the lab (e.g. "JamesLong\_EMG\_I"). The BIOPAC student software will create a "Data Files" folder inside the "BIOPAC Student Lab" folder where all your data will be stored.
-	\item After you log in, check the bottom of the window that has popped up as shown in Fig \ref{channel}. This will indicate  the channel to plug in your electrode lead. \textit{For most units, this will be channel 1.}
-		\begin{figure}[h]
-	\includegraphics[width=0.8\textwidth]{../images/EMG_I_5a.jpg}
-	\includegraphics[width=0.8\textwidth]{../images/EMG_I_5b.jpg}
-		\centering
-		\caption{Locating the channel to plug in your electrode lead.}
-		\label{channel}
-		\end{figure}
-	
-	\item Plug your electrode leads into the indicated channel on the MP3X as shown in Fig. \ref{channel2}.
-		\begin{figure}[h]
-	\includegraphics[width=0.8\textwidth]{../images/EMG_I_6.jpg}
-		\centering
-		\caption{Physical location of MP3X channels.}
-		\label{channel2}
-		\end{figure}
-	
-	\item Select a subject for EMG measurements. Attach the electrodes to the medial aspect of the anterior forearm, as pictured in Fig. \ref{forearm} (add supplemental info here?)
-		\begin{itemize}
-			\item Red (+): closer to wrist
-			\item White (-): closer to elbow
-			\item Black (ground): wrist bone
-		\end{itemize}
-	
-		\begin{figure}[h]
-	\includegraphics[width=0.8\textwidth]{../images/EMG_I_7.jpg}
-		\centering
-		\caption{Physical location of MP3X channels.}
-		\label{forearm}
-		\end{figure}
-
-	\item For the first recording segment, choose the subject's dominant arm to attach the leads. This will be Forearm 1.
-\end{enumerate}
-
-\section*{Calibration}
-\begin{enumerate}
-	\item Click on calibrate in the top left hand corner of your screen. A dialogue box with instructions will appear.
-	\item \textit{Read steps 3 to 5 before clicking anything. When ready, click "OK", and perform the calibration detailed in steps 3 to 5.}
-	\item The calibration procedure will last 8 seconds. After pressing "OK", wait approximately 2 seconds, then briefly clench your fist at a medium strength, and release.
-	\item Keep your arm as still as possible, preferably resting on the table, for the duration of the calibration procedure.
-	\item In this step, and all other "squeezing" sections of this lab, it is helpful to use some object to squeeze. This allows stronger clench strength.
-	\item If your calibration appears significantly different than the calibration shown in Fig. \ref{calibration} (e.g. if it does not appear with a zero baseline or does not show an increase in EMG signal for the duration of the clench), click "redo calibration." If problems persist with calibration, try repositioning your electrode.
-		\begin{figure}[h]
-	\includegraphics[width=0.8\textwidth]{../images/EMG_I_8a.jpg}	\includegraphics[width=0.8\textwidth]{../images/EMG_I_8b.jpg}
-		\centering
-		\caption{Example calibration}
-		\label{calibration}
-		\end{figure}
-\end{enumerate}
-
-\section*{Data Acquisition}
-You will record two segments of data per subject: one segment for Forearm 1 (the dominant arm), and one segment for Forearm 2 (the non-dominant arm).
-\begin{enumerate}
-	\item When you begin to record, the subject will repeat a cycle of clench-release-wait as follows: clench hand, hold the clench for 2 seconds, release the clench, and wait for 2 seconds before beginning the next clench cycle.
-	\item The subject will record 4 clench-release-wait cycles as described above. Clench strength should be increased for each following cycle in equal increments, doubling the clench strength for each cycle. The fourth clench strength should be the subject's maximum clench strength.
-	\item When you are ready, click "record" and begin collecting data. After the fourth clench, click "suspend." The recording should look similar to Fig. \ref{clench}.
-		\begin{figure}[h]
-	\includegraphics[width=0.8\textwidth]{../images/EMG_I_9a.jpg}	\includegraphics[width=0.8\textwidth]{../images/EMG_I_9b.jpg}
-		\centering
-		\caption{Example EMG clench data}
-		\label{clench}
-		\end{figure}
-
-	\item If the recording does not look similar or there was an error in acquisition, click "redo" to erase the segment of data you just recorded and try again.
-	\item Attach the electrodes to the subject's non-dominant arm (Forearm 2). \textit{Do not take the electrodes off the dominant forearm, as they will be used later in the lab.}
-	\item Click "resume recording" and repeat the same clench-release-wait cycle as was performed for the dominant arm. The BIOPAC program will automatically insert a marker labeled "forearm 2" in the marker bar.
-	\item If the data does not look like that in Fig. \ref{clench}, click the "redo" button and repeat the measurements. The data for forearm 1 will not be erased.
-	\item After you have finished measurements for both forearms, you may remove the electrodes from your non-dominant forearm. \textit{Do not take the electrodes off the dominant forearm, as they will be used later in the lab.}
-	\item Click "Stop" in the upper left hand corner of your screen to finish recording. A dialog box will appear asking if you are finished with your recordings. Click "yes" to end the data recording and save the data.
-	\item If a dialog box pops up, you can listen to the EMG signal (optional). When you are finished, click "Done". A final box will then appear; select "analyze current data file," and proceed with the lab.
-\end{enumerate}
+\textbf{Student Name:}\hfill 	\textbf{Total Grade:\ \ \ \ /25}\\
 
 \section*{Data Analysis}
-\begin{enumerate}
-	\item The first marker indicates the beginning of Forearm 1 data, and the second marker indicates the beginning of Forearm 2 data. For most units, channel 1 displays the standard EMG data; if you plugged in your electrodes to channel 3, standard EMG data will be displayed on channel 3.
-	\item Channel 40 displays the integrated EMG data, which is similar to the absolute value of the EMG. It appears to "trace" an imaginary upper edge of the standard EMG signal as shown in Fig. \ref{integrated}.
-		\begin{figure}[h]
-	\includegraphics[width=0.8\textwidth]{../images/EMG_I_10a.jpg}	\includegraphics[width=0.8\textwidth]{../images/EMG_I_10b.jpg}
-		\centering
-		\caption{Integrated EMG overlapped with standard EMG.}
-		\label{integrated}
-		\end{figure}
-
-	\item Scale your data so that you can view the first four clusters of standard EMG signal.
-	\item Set up the following measurement boxes:
-		\begin{table}[h!]
+\begin{itemize}
+	\item[6.]
+	
+	\begin{table}[h!]
 	\centering
-	\label{meas_boxes}
-	\begin{tabular}[h!]{cc}
+	\caption{EMG measurements for dominant forearm}
+	\begin{tabular}[h!]{p{0.1\linewidth}|p{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}}
 	\toprule
-	Channel & Measurement\\
+	Cluster & min (mV) & max (mV) & P-P (mV) & mean (mV-sec)\\
 	\midrule
-	1 & min\\
-	1 & max\\
-	1 & P-P\\
-	40 & mean\\
+	1 & & & &\\& & & &\\
+	
+	\midrule
+	2 & & & &\\& & & &\\
+	\midrule
+	3 & & & &\\& & & &\\
+	\midrule
+	4 & & & &\\& & & &\\
 	\bottomrule
 	\end{tabular}
 	\end{table}
 	
-	\item Use the I-beam tool to select one EMG cluster at a time. Use the "plateau" region of the integrated EMG to guide your selection, and avoid highlighting the "build up" EMG signals of your desired contraction (Fig. \ref{highlighting})
-		\begin{figure}[h]
-	\includegraphics[width=0.8\textwidth]{../images/EMG_I_11a.jpg}	\includegraphics[width=0.8\textwidth]{../images/EMG_I_11b.jpg}
-		\centering
-		\caption{Highlighting EMG peaks.}
-		\label{highlighting}
-		\end{figure}
+	\begin{itemize}
+		\item[(a)] What is the percentage increase or decrease in EMG activity between the weakest and strongest clench for the dominant forearm? Show your calculations.\vspace{4cm}
+		\item[(b)] Why can't you use the raw EMG signal to determine the mean value? Why must the integrated EMG signal be used?\vspace{3cm}
+	\end{itemize}
 	
-	\item Record your measurement values for Forearm 1 (dominant arm) on your handout.
-	\begin{enumerate}
-		\item What is the percentage increase or decrease in EMG activity between the weakest and strongest clench for the dominant forearm? Show your calculations.
-		\item Why can't you use the raw EMG signal to determine the mean value? Why must the integrated EMG signal be used?
-	\end{enumerate}
-	\item Repeat the measurement process for Forearm 2 (non-dominant arm) and record the values on your handout.
-	\begin{enumerate}
-		\item Compare the mean values of the strongest clench in EMG activity between the two forearms. Report the difference between the two forearms as a magnitude (mV or mV-sec) as well as a percentage (\%). Show your calculations.
-		\item Does the dominant or non-dominant forearm show the highest EMG clench? Explain the physiological basis of your results.
-		\item List four factors that influence maximum clench strength.
-	\end{enumerate}
+	\item[7.]
+	\begin{table}[h!]
+	\centering
+	\caption{EMG measurements for non-dominant forearm}
+	\begin{tabular}[h!]{p{0.1\linewidth}|p{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}}
+	\toprule
+	Cluster & min (mV) & max (mV) & P-P (mV) & mean (mV-sec)\\
+	\midrule
+	1 & & & &\\& & & &\\
 	
-	\item Measure tonus by examining the periods of rest in between each EMG cluster. While acquiring these values, be careful to only collect tonus data, i.e. do not use any measurements where clenching is taking place. Record these values on your handout.
-	\begin{enumerate}
-		\item Is there a difference in tonus between the two forearms? If so, quantify (and show your work) and explain why.
-	\end{enumerate}
+	\midrule
+	2 & & & &\\& & & &\\
+	\midrule
+	3 & & & &\\& & & &\\
+	\midrule
+	4 & & & &\\& & & &\\
+	\bottomrule
+	\end{tabular}
+	\end{table}
 	
-	\item You may close and save the current BIOPAC recording.
-\end{enumerate}
+	\begin{itemize}
+		\item[(a)] Compare the mean values of the strongest clench in EMG activity between the two forearms. Report the difference between the two forearms as a magnitude (mV or mV-sec) as well as a percentage (\%). Show your calculations.\vspace{6cm}
+		\item[(b)] Does the dominant or non-dominant forearm show the highest EMG clench? Explain the physiological basis of your results.\vspace{5cm}
+		\item[(c)] List four factors that influence maximum clench strength.\vspace{4cm}
+	\end{itemize}
+	
+	\item[8.]
+	\begin{table}[h!]
+	\centering
+	\caption{Tonus measurements}
+	\begin{tabular}[h!]{p{0.1\linewidth}|p{0.2\linewidth}p{0.2\linewidth}|p{0.2\linewidth}p{0.2\linewidth}}
+	\toprule
+	& Forearm 1 & & Forearm 2 &\\
+	Period & min (mV) & max (mV) & P-P (mV) & mean (mV-sec)\\
+	\midrule
+	1 & & & &\\& & & &\\
+	
+	\midrule
+	2 & & & &\\& & & &\\
+	\midrule
+	3 & & & &\\& & & &\\
+	\bottomrule
+	\end{tabular}
+	\end{table}
+	
+	\begin{itemize}
+		\item[(a)] Is there a difference in tonus between the two forearms? If so, quantify (and show your work) and explain why.\vspace{6cm}
+	\end{itemize}
+\end{itemize}
 
 \section*{Examining Other Motions}
-\begin{enumerate}
-	\item Relaunch the BIOPAC software by clicking on the BSL Lessons 3.7.6 icon that can be found on your desktop and select L01-EMG-1.
-	\item Recalibrate the BIOPAC system.
-	\item Consider several everyday tasks using your hand such as waving, writing, typing, etc. Identify three different tasks and collect EMG data using protocols described in the previous section.
-	\item Record your measurements on your handout.
-	\begin{enumerate}
-		\item Do you observe any differences among the EMG activity for the three tasks? If so, quantify the differences and explain the physiological origin of the difference. If not, explain why no difference should be observed.
-		\item Predict the shape and magnitude of the EMG signal during the following scenarios. You may test these scenarios out if you want, using the protocol described previously.)
-		\begin{enumerate}
-			\item Grasping an object until your muscle is fatigued.
-			\item Muscle undergoing isotonic contraction compared to isometric contraction.
-		\end{enumerate}
-	\end{enumerate}
-	
-	\item When you are finished collecting and analyzing data, click "stop" in the upper left corner of the screen. A dialog box will appear asking if you are finished with your recordings. Click "yes" to end the recording and save the data.
-	\item Remove the electrodes from your forearm.
-\end{enumerate}
+\begin{itemize}
+	\item[4.]
+	\begin{table}[h!]
+	\centering
+	\caption{EMG measurements for other motions}
+	\begin{tabular}[h!]{p{0.1\linewidth}|p{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}p{0.2\linewidth}}
+	\toprule
+	Motion & min (mV) & max (mV) & P-P (mV) & mean (mV-sec)\\
+	\midrule
+	& & & &\\& & & &\\
+	\midrule
+	& & & &\\& & & &\\
+	\midrule
+	& & & &\\& & & &\\
+	\bottomrule
+	\end{tabular}
+	\end{table}
+	\begin{itemize}
+		\item[(a)] Do you observe any differences among the EMG activity for the three tasks? If so, quantify the differences and explain the physiological origin of the difference. If not, explain why no difference should be observed.\vspace{4cm}
+		\item[(b)] Predict the shape and magnitude of the EMG signal during the following scenarios. You may test these scenarios out if you want, using the protocol described previously.
+		\begin{itemize}
+			\item[i.] Grasping an object until your muscle is fatigued.\vspace{7cm}
+			\item[ii.] Muscle undergoing isotonic contraction compared to isometric contraction.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
 \end{document}
