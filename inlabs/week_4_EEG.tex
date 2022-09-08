@@ -1,0 +1,210 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,}
+\usepackage{booktabs}
+\usepackage{textgreek}
+
+\input{../structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Week 4: Electroencephalography (EEG)}
+\author{BIOE 320 Systems Physiology Laboratory} 
+\date{}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\large
+\maketitle
+
+\section*{Objectives}
+\begin{enumerate}
+	\item To record an EEG from an awake, resting subject under the following conditions:
+	\begin{itemize}
+		\item Relaxed, eyes open
+		\item Relaxed, eyes closed
+		\item Mental arithmetic
+		\item Hyperventilation
+	\end{itemize}
+	\item To examine alpha, beta, delta, and theta components of the EEF complex
+\end{enumerate}
+
+\section*{Background}
+The brain is encased by the cranium and protected by a thin layer of skin, the scalp. The cerebral cortex is the largest part of the brain that lies underneath the cranium. The cerebral cortex is responsible for many major functions and is involved in sensing and processing various types of information. It consists of four different lobes: the frontal, parietal, occipital, and temporal (Fig. \ref{brain}). The front lobe of the cortex controls voluntary muscle contractions, the occipital lobe processes visual information, the temporal lobe processes auditory information, and the parietal lobe processes other somatosensory information.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{../images/EEG_1.jpg}	
+\caption{Function of muscle spindle during a monosynaptic stretch reflex.}
+\label{brain}
+\end{figure}
+
+The brain is always electrically active, even when asleep, as nerve impulses are always being sent to and from cortical neurons. Electrodes placed on the scalp can measure patterns of electrical activity as a series of complex waveforms, called an electroencephalogram, or EEG. The firing of neurons must occur synchronously in order to be detected, so the intensity of brain waves is determined by the synchrony of the firing neurons, not by the total electrical activity.
+
+\subsection*{Types of Brain Waves}
+\subsubsection*{Alpha Waves: 8-13 Hz}
+Alpha waves are the most common wave pattern for adults in an awake but relaxed state with their eyes closed. Alpha waves of the largest amplitude are usually measured from the occipital and parietal lobes. Biological females have higher mean frequencies of alpha waves than biological males. Alpha waves also diminish when the subject opens their eyes and is alert to external stimuli.
+
+\subsubsection*{Beta Waves: 13-20 Hz}
+Beta waves occur when the subject is alert, attentive to external stimuli, or exerting mental effort. It also occurs during rapid eye movement (REM) when the person is sleeping. Beta waves have lower amplitude than alpha waves, indicating that destructive interference or desynchronization occurs. Instead of regular sinusoidal patterns, positive and negative portions of different waves start to overlap and cancel each other out, resulting in the lower amplitude observed. Beta waves are best recorded from the frontal lobes.
+
+\subsubsection*{Theta Waves: 5-8 Hz}
+Theta waves are low frequency waves that increase during non-RE sleep. They occur as people transition from lighter to deeper states of sleep and can be best measured from the temporal and occipital lobes. Theta waves also occur for brief periods of time when the subject is frustrated. They can also be seen in awake newborn infants.
+
+\subsubsection*{Delta Waves: 1-5 Hz}
+Delta waves are the lowest frequency rhythm
+
+\begin{enumerate}
+	\item Write the physiological analog of the spinal reflex arc to each component of the negative feedback system diagram:
+	\begin{enumerate}
+		\item Set point:
+		\item Forward gain (effector):
+		\item Output (regulated variable):
+		\item Feedback gain:
+	\end{enumerate}
+	\item What happens to the regulated output variable if it is higher than the set point? What if it is lower?
+\end{enumerate}
+
+\section*{Required Supplies}
+\begin{itemize}
+	\item BIOPAC student labs lesson L01: EMG I
+	\item BIOPAC MP3X data acquisition unit
+	\item BIOPAC electrode lead set
+	\item BIOPAC reflex hammer transducer (SS36L)
+	\item BIOPAC disposable vinyl electrodes
+	\item Optional but useful: alcohol wipes, abrasive pads, physiology tape, electrode gel
+	\item Tape measure (supplied on request)
+\end{itemize}
+
+\section*{Setting Up the Software}
+\begin{enumerate}
+	\item (TA only) If using a silver hammer, make sure that the reflex hammer is inserted into the black transducer (cube shape), which was sent with the stethoscope. Make sure the transducer is firmly attached to the hammer with tape.
+	\item Plug the output line from the reflex hammer into channel 1 of the MP3X unit. The signal from the reflex hammer record the impact of the hammer with a surface.
+	\item Plug the electrode lead set (SS2L) into channel 2. The signal from the electrodes records the EMG of the muscle activity.
+	\item Turn the MP3X unit on.
+	\item Open BIOPAC student lab lessons	software and selection L20 - Spinal Cord Reflexes (see Fig. \ref{lesson})
+	
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{../images/EMG_II_3.jpg}	
+		\caption{Select lesson L20 - Spinal Cord Reflexes}
+		\label{lesson}
+		\end{figure}
+	
+	\item Type in your file name in the pop-up window. If a pop-up window appears asking if an existing folder should be used or a new folder should be created, select "Use It."
+\end{enumerate}
+
+\section*{Ankle Jerk Reflex}
+\begin{enumerate}
+	\item Place two electrodes on the upper backside of the calf muscle, approximately 5 inches away from each other (Fig. \ref{ankle}).
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{../images/EMG_II_4.jpg}	
+		\caption{Electrode positioning for ankle jerk reflex}
+		\label{ankle}
+		\end{figure}
+	
+		\begin{itemize}
+			\item Red (+): closest to knee
+			\item White (-): middle of calf
+			\item Black (ground): inside of ankle
+		\end{itemize}
+	
+	\item Click the "Calibrate" button located in the upper left corner of the Setup window.
+	\item A pop-up window will open confirming that the subject is positioned properly (Fig. \ref{calibration}). Make sure the subject is relaxed and the hammer is placed on a flat surface.
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{../images/EMG_II_5.jpg}	
+		\caption{Calibration procedure}
+		\label{calibration}
+		\end{figure}
+		
+	\item When the subject is ready, click "OK" to start the calibration recordings.
+	\item During the calibration procedure, start with a relaxed muscle and the hammer on a flat surface, then strike the hammer \textbf{lightly} in the table 2-3 times and flex your muscle of interest 2-3 times.
+	\item The calibration procedure will stop automatically after 12 seconds. At the end of the calibration recording, the screen should resemble Fig. \ref{calibration2}.
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{../images/EMG_II_6a.jpg}
+		\includegraphics[width=0.8\textwidth]{../images/EMG_II_6b.jpg}	
+		\caption{Calibration procedure - final view}
+		\label{calibration2}
+		\end{figure}
+
+	\item If the data resembles Fig. \ref{calibration2}, proceed to the Data Recording Session. Otherwise, recheck connections and click Redo Calibration.
+	\item Select "Record" when you are ready to start recording.
+	\item Strike the Achilles tendon behind the ankle just above the heel and observe the resulting muscle contraction.
+	\item Continue recording and repeat the strike on the Achilles tendon 15-20 times, as necessary, to get consistent data.
+	\item Click on the "Suspend" button to pause or stop recording.
+	\item Repeat steps 8-11 to measure the voluntary reaction time. Without the subject looking, lightly hit the reflex hammer against a table and have the subject voluntarily jerk their ankle in response to the sound.
+	\item When you are finished, click "Done."
+	\begin{warn}
+		You will not be able to take additional measurements	 after this step, so make sure you have all the tests you need.
+	\end{warn}
+	\item From the pop-up window, selection "Analyze current data file."
+	\item The reaction time is determined by selecting the desired time interval with the "I" cursor and reading "delta T" from the screen. Reaction time is measured from \textit{onset} of hammer strike to \textit{onset} of EMG activity.
+	\item Determine the reaction times for each strike and record them on your handout. Calculate the mean and standard deviation for each condition.
+	\item Is there a significant difference between the reflex reaction time and the voluntary reaction time? Conduct a statistical test to determine if there is a statistically significant difference. Explain your procedure and calculations. Give a physiological explanation for your results.
+	\item When you are finished analyzing your data, select "Quit" from the File menu to exit the program.
+\end{enumerate}
+
+\section*{Knee Jerk Reflex}
+\subsection*{Regular Procedure}
+\begin{enumerate}
+	\item Place two electrodes on the quadriceps muscle on the front of the thigh, approximately 10 cm apart (Fig. \ref{knee}). Connect the leads as described below:
+		\begin{itemize}
+			\item Red (+): closest to knee
+			\item White (-): middle of calf
+			\item Black (ground): inside of ankle
+		\end{itemize}
+		
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{../images/EMG_II_7.jpg}	
+		\caption{Electrode positioning for knee jerk reflex}
+		\label{knee}
+		\end{figure}
+	
+	\item Have the subject sit with their legs hanging freely over the edge of the chair.
+	\item Follow the instructions previously described under "Setting Up the Software."
+	\item Click the "Calibrate" button located in the upper left corner of the Setup window.
+	\item A pop-up window will open confirming that the subject is positioned properly. Make sure that the subject is relaxed and the hammer is placed on a flat surface.
+	\item When the subject is ready, click "OK" to start the calibration recordings. The calibration procedure will stop automatically after 12 seconds.
+	\item During the calibration, lightly strike the hammer 2-3 times and flex your muscle of interest. Check to see if the resulting data resembles Fig. \ref{calibration2}. If not, recheck connections and repeat.
+	\item Select "Record" when you are ready to start recording.
+	\item Strike the patellar ligament on the knee and observe the resulting reflex contraction.
+	\item Continue recording and repeat the strike on the patellar ligament 15-20 times, as necessary, to get consistent data.
+	\item Click on the "Suspend" button to pause or stop recording.
+	\item Determine the reaction times for each strike and record them on your handout. Additionally, determine the magnitude of the hammer strike and the EMG pulse for each strike. For all three measurements, calculate the mean and standard deviation.
+	\item Is there a relationship between hammer strike force and reaction time? Explain.
+	\item Is there are relationship between hammer strike force and the magnitude of the muscle response? Explain.
+	\item Measure the length of this reflex arc, realizing that it involves the L2, L3, and L4 segments of the spinal cord. Calculate an estimate of the nerve conduction velocity. Do you expect this to be an overestimate or an underestimate? Why? \textbf{Record the conduction velocity as you will need this information for your post-lab assignment}.
+	\item Do not remove the electrodes. After checking your results (and before you exit this screen and begin data analysis), continue to the following section.
+\end{enumerate}
+
+\subsection*{Jendrassik Maneuver}
+\begin{enumerate}
+	\item Maintain the electrodes and leads as described in the previous section.
+	\item Have the subject remain seated with their legs hanging freely over the edge of the chair.
+	\item Have the subject perform the Jendrassik Maneuver. To perform this maneuver, the subject must grip both hands together across their chest and attempt to pull them apart with maximum force while the knee jerk reflex is obtained (Fig. \ref{jendrassik}).
+	
+		\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\textwidth]{../images/EMG_II_8.jpg}	
+		\caption{Jendrassik maneuver}
+		\label{jendrassik}
+		\end{figure}
+
+	\item Conduct the procedure given in steps 8-11 of the previous section to collect the necessary data.
+	\item From the pop-up window, select "Analyze current data file."
+	\item Determine the reaction times for each strike and record them on your handout. Additionally, determine the magnitude of the hammer strike and the EMG pulse for each strike. For all three measurements, calculate the mean and standard deviation.
+	\item How do the reaction times during the Jendrassik maneuver compare to the regular procedure? Explain the change or lack of change.
+	\item How do the muscle response magnitudes during the Jendrassik maneuver compare to the regular procedure? Recall the negative feedback diagram (Fig. \ref{feedback}). Which variable do you think has changed?
+	\item One feature of negative feedback systems with high gain is \textit{ringing}, the presence of transient oscillations in the regulated variable before it settles to a steady-state value. Did you observe ringing in any of your experiments? If so, in what test(s)? Briefly describe how this occurs in terms of the feedback diagram. Why does high gain make ringing more likely?
+\end{enumerate}
+\end{document}
