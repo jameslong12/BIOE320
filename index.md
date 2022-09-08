@@ -15,3 +15,7 @@ title: "Welcome to BIOE 320!"
 		- *Thursday:* [Name](mailto:email@rice.edu)
 		
 - Canvas sites (for assignment submission and grades)
+
+| Lab | Pre-Lab | In-Lab | Post-Lab | 
+| :---: | :---: | :---: | :---: |
+| Week 1: BIOPAC | N/A | [Link](inlabs/week_1_BIOPAC.pdf) | [Link](postlabs/week_1_BIOPAC.pdf)
