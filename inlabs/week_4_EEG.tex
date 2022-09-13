@@ -45,7 +45,16 @@ The brain is encased by the cranium and protected by a thin layer of skin, the s
 \label{brain}
 \end{figure}
 
-The brain is always electrically active, even when asleep, as nerve impulses are always being sent to and from cortical neurons. Electrodes placed on the scalp can measure patterns of electrical activity as a series of complex waveforms, called an electroencephalogram, or EEG. The firing of neurons must occur synchronously in order to be detected, so the intensity of brain waves is determined by the synchrony of the firing neurons, not by the total electrical activity.
+The brain is always electrically active, even when asleep, as nerve impulses are always being sent to and from cortical neurons. Electrodes placed on the scalp can measure patterns of electrical activity as a series of complex waveforms, called an electroencephalogram, or EEG. The firing of neurons must occur synchronously in order to be detected, so the intensity of brain waves, which are neuronal electrical impulses that travel through the brain (Fig. \ref{brainwaves}, is determined by the synchrony of the firing neurons, not by the total electrical activity.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{../images/EEG_2.jpg}	
+\caption{Different types of brain waves in an example EEG}
+\label{brainwaves}
+\end{figure}
+
+In an EEG, the electrodes attached to the scalp measure the difference in electric potential (voltage) in the different lobes of the brain. In this lab, we will place the electrodes using a standard bipolar method. In a bipolar recording, the voltage difference between two electrodes placed over the cortical region of interest is measured with respect to a third reference electrode. This will be elaborated in the protocol.
 
 \subsection*{Types of Brain Waves}
 \subsubsection*{Alpha Waves: 8-13 Hz}
@@ -58,153 +67,219 @@ Beta waves occur when the subject is alert, attentive to external stimuli, or ex
 Theta waves are low frequency waves that increase during non-RE sleep. They occur as people transition from lighter to deeper states of sleep and can be best measured from the temporal and occipital lobes. Theta waves also occur for brief periods of time when the subject is frustrated. They can also be seen in awake newborn infants.
 
 \subsubsection*{Delta Waves: 1-5 Hz}
-Delta waves are the lowest frequency rhythm
+Delta waves are the lowest frequency rhythms observed in an EEG. They can be seen during the period right before the deepest stage of sleep or in awake subjects when they undergo difficult mental activity. They are best recorded from the cerebral cortex and can also be present in awake infants.\\
 
-\begin{enumerate}
-	\item Write the physiological analog of the spinal reflex arc to each component of the negative feedback system diagram:
-	\begin{enumerate}
-		\item Set point:
-		\item Forward gain (effector):
-		\item Output (regulated variable):
-		\item Feedback gain:
-	\end{enumerate}
-	\item What happens to the regulated output variable if it is higher than the set point? What if it is lower?
-\end{enumerate}
+\textit{Synchrony} occurs when neurons fire at the same time. When the neurons fire at the same time, they constructively interfere with each other and as a result, larger EEG waves can be seen. For this lab it is important to understand the concept of destructive interference of waves, in which the overall wave amplitude is lowered when the positive and negative portions of the two different waves cancel each other out. Therefore, the amplitude of the waves measured in the EEG depends on the number of neurons firing in synchrony rather than overall electrical activity. An example of this phenomenon is \textit{alpha block}, where a new waveform interferes with alpha waves, leading to a decrease in the amplitude of the EEG recording (Fig. \ref{alphablock}).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{../images/EEG_3.jpg}	
+\caption{An example of alpha block}
+\label{alphablock}
+\end{figure}
 
 \section*{Required Supplies}
 \begin{itemize}
-	\item BIOPAC student labs lesson L01: EMG I
+	\item BIOPAC student labs lesson L03: EEG 1 and L04: EEG 2
 	\item BIOPAC MP3X data acquisition unit
 	\item BIOPAC electrode lead set
 	\item BIOPAC reflex hammer transducer (SS36L)
-	\item BIOPAC disposable vinyl electrodes
+	\item BIOPAC disposable vinyl electrodes (3 per subject)
+	\item Elastic headband or cap to hold electrodes against the scalp
+	\item Yoga mat (optional)
 	\item Optional but useful: alcohol wipes, abrasive pads, physiology tape, electrode gel
-	\item Tape measure (supplied on request)
 \end{itemize}
 
-\section*{Setting Up the Software}
+\section*{Setting Up for Experiment 1}
 \begin{enumerate}
-	\item (TA only) If using a silver hammer, make sure that the reflex hammer is inserted into the black transducer (cube shape), which was sent with the stethoscope. Make sure the transducer is firmly attached to the hammer with tape.
-	\item Plug the output line from the reflex hammer into channel 1 of the MP3X unit. The signal from the reflex hammer record the impact of the hammer with a surface.
-	\item Plug the electrode lead set (SS2L) into channel 2. The signal from the electrodes records the EMG of the muscle activity.
-	\item Turn the MP3X unit on.
-	\item Open BIOPAC student lab lessons	software and selection L20 - Spinal Cord Reflexes (see Fig. \ref{lesson})
-	
+	\item Turn on the MP3X acquisition unit by flipping the switch found on the back panel
+	\item Launch the BIOPAC software by clicking on the BSL lessons 3.7.6 icon that can be found on your desktop. Select L03-EEG-1 as shown in Fig. \ref{lesson}.
 		\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.6\textwidth]{../images/EMG_II_3.jpg}	
-		\caption{Select lesson L20 - Spinal Cord Reflexes}
+	\includegraphics[width=0.6\textwidth]{../images/EEG_4.jpg}	
+		\caption{Selecting BIOPAC lesson L03}
 		\label{lesson}
 		\end{figure}
+
+	\item When the prompt asking for your file name appears, name the file using your name and a description about the lab. The BIOPAC student software will create a folder inside of the BIOPAC Student Lab folder where all your data will be stored.
+	\item Plug the electrode lead set into channel 1 of the MP3X unit.
+	\item Select a subject for the EEG and have them assume a relaxed position. Move as much hair as possible away from the adhesion area and apply pressure to the electrodes for about a minute to maximize adhesion.
+	\item Place two electrodes on the scalp and one on the earlobe (ground) as seen in Fig. \ref{electrodes}.
+		\begin{itemize}
+			\item Red (+): highest placed electrode
+			\item White (-): electrode behind ear
+			\item Black (ground): earlobe
+		\end{itemize}
+		
+		 \begin{figure}[h]
+	\centering\includegraphics[width=0.35\textwidth]{../images/EEG_5a.jpg}
+	\includegraphics[width=0.6\textwidth]{../images/EEG_5b.jpg}		
+		\caption{Proper electrode placement}
+		\label{electrodes}
+		\end{figure}
+		
+	\item Secure the electrodes by wearing a swim cap or a headband over the electrodes to keep them in place. Proper electrode contact is really important for this lab, so make sure that your electrodes are properly attached before placing the swim cap/headband over them.\\
 	
-	\item Type in your file name in the pop-up window. If a pop-up window appears asking if an existing folder should be used or a new folder should be created, select "Use It."
+		Some tips for achieving the best data:
+		\begin{itemize}
+			\item Be sure to separate the hair so the electrode has maximum surface area contact with the scalp.
+			\item Apply pressure to the electrodes for about 1 minute after initial placement to make them secure. Do not immediately connect the leads.
+			\item Make sure the subject is in a relaxed position (in a chair or lying down on a yoga mat).
+			\item Subject should remain as still as possible since blinking and other movements will affect the recording of all the brain rhythms and interfere with the data.
+			\item Putting a swim cap or headband on will secure the leads with constant pressure. Have the subject hold the swim cap to their forehead, while a second person pulls the swim cap carefully over the rest of the head.
+			\item Make sure the electrode leads are not being pulled on.
+		\end{itemize}
 \end{enumerate}
 
-\section*{Ankle Jerk Reflex}
+\section*{Calibration}
 \begin{enumerate}
-	\item Place two electrodes on the upper backside of the calf muscle, approximately 5 inches away from each other (Fig. \ref{ankle}).
-		\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.6\textwidth]{../images/EMG_II_4.jpg}	
-		\caption{Electrode positioning for ankle jerk reflex}
-		\label{ankle}
-		\end{figure}
+	\item Check to make sure the electrodes are secure and the lead is plugged into channel 1.
+	\item The calibrate button is in the upper left corner of the setup window. Click the calibrate button and the procedure will begin. It will stop automatically after 8 seconds. After the 8 second calibration period, the screen should look like Fig. \ref{calibration}.
 	
-		\begin{itemize}
-			\item Red (+): closest to knee
-			\item White (-): middle of calf
-			\item Black (ground): inside of ankle
-		\end{itemize}
-	
-	\item Click the "Calibrate" button located in the upper left corner of the Setup window.
-	\item A pop-up window will open confirming that the subject is positioned properly (Fig. \ref{calibration}). Make sure the subject is relaxed and the hammer is placed on a flat surface.
 		\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.8\textwidth]{../images/EMG_II_5.jpg}	
-		\caption{Calibration procedure}
+	\centering\includegraphics[width=0.6\textwidth]{../images/EEG_6a.jpg}
+	\centering\includegraphics[width=0.6\textwidth]{../images/EEG_6b.jpg}	
+		\caption{Calibration screen after the 8 second recording}
 		\label{calibration}
 		\end{figure}
-		
-	\item When the subject is ready, click "OK" to start the calibration recordings.
-	\item During the calibration procedure, start with a relaxed muscle and the hammer on a flat surface, then strike the hammer \textbf{lightly} in the table 2-3 times and flex your muscle of interest 2-3 times.
-	\item The calibration procedure will stop automatically after 12 seconds. At the end of the calibration recording, the screen should resemble Fig. \ref{calibration2}.
-		\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.8\textwidth]{../images/EMG_II_6a.jpg}
-		\includegraphics[width=0.8\textwidth]{../images/EMG_II_6b.jpg}	
-		\caption{Calibration procedure - final view}
-		\label{calibration2}
-		\end{figure}
-
-	\item If the data resembles Fig. \ref{calibration2}, proceed to the Data Recording Session. Otherwise, recheck connections and click Redo Calibration.
-	\item Select "Record" when you are ready to start recording.
-	\item Strike the Achilles tendon behind the ankle just above the heel and observe the resulting muscle contraction.
-	\item Continue recording and repeat the strike on the Achilles tendon 15-20 times, as necessary, to get consistent data.
-	\item Click on the "Suspend" button to pause or stop recording.
-	\item Repeat steps 8-11 to measure the voluntary reaction time. Without the subject looking, lightly hit the reflex hammer against a table and have the subject voluntarily jerk their ankle in response to the sound.
-	\item When you are finished, click "Done."
-	\begin{warn}
-		You will not be able to take additional measurements	 after this step, so make sure you have all the tests you need.
-	\end{warn}
-	\item From the pop-up window, selection "Analyze current data file."
-	\item The reaction time is determined by selecting the desired time interval with the "I" cursor and reading "delta T" from the screen. Reaction time is measured from \textit{onset} of hammer strike to \textit{onset} of EMG activity.
-	\item Determine the reaction times for each strike and record them on your handout. Calculate the mean and standard deviation for each condition.
-	\item Is there a significant difference between the reflex reaction time and the voluntary reaction time? Conduct a statistical test to determine if there is a statistically significant difference. Explain your procedure and calculations. Give a physiological explanation for your results.
-	\item When you are finished analyzing your data, select "Quit" from the File menu to exit the program.
+	
+	\item If the data shows any large spikes or is significantly different from Fig. \ref{calibration}, redo the calibration by clicking the Redo Calibration button.
 \end{enumerate}
 
-\section*{Knee Jerk Reflex}
-\subsection*{Regular Procedure}
+\section*{Data Acquisition}
+You will record the raw EEG signal while the subject is relaxed with their eyes closed, eyes opened, and then eyes closed again for a time interval. After recording the EEG, the data for the four different brain rhythms will be analyzed.\\
+
+Before continuing:
 \begin{enumerate}
-	\item Place two electrodes on the quadriceps muscle on the front of the thigh, approximately 10 cm apart (Fig. \ref{knee}). Connect the leads as described below:
+	\item Make sure the electrodes still have good contact and are not moving around.
+	\item Make sure the subject is staying still (including the facial muscles).
+	\item It might help if the subject tries to focus on breathing slowly to help them relax.
+\end{enumerate}
+
+\begin{enumerate}
+	\item Click Record, and the first segment marker will be inserted.
+	\item The subject should keep their eyes closed for 10 seconds.
+	\item After 10 seconds, insert a data marker and tell the subject to open their eyes.
+	\item The subject should keep their eyes open for 10 seconds, trying not to blink. They should also look around at different things to stimulate the brain.
+	\item After 10 seconds of keeping their eyes open, insert another data marker and tell the subject to close their eyes for 10 seconds again.
+	\item After this third interval of 10 seconds, stop the recording by clicking Stop.
+	\item The data should look like Fig. \ref{eyes}. If it looks similar to the figure, proceed to the next step. If it looks significantly different, redo the data collection.
+	\begin{warn}
+		If you click redo, you will lose the data that was just recorded.
+	\end{warn}
+	
+	\item If the data is good, click Done, and a dialog box will ask if you are finished. Click "yes" to end the data recording and save the data.
+	\item Select "analyze current data file" from the next dialog box, and you should see four different graphs with each of the brain waves (alpha, beta, delta, and theta) displayed. If you would like to record this data again, click the Redo button.
+	\item Do not remove the electrodes yet, as you will need them for the next experiment.
+\end{enumerate}
+
+\section*{Data Analysis}
+\begin{enumerate}
+	\item Make sure the channel number designations are as follows:
 		\begin{itemize}
-			\item Red (+): closest to knee
-			\item White (-): middle of calf
-			\item Black (ground): inside of ankle
+			\item channel 1: EEG
+			\item channel 40: alpha
+			\item channel 41: beta
+			\item channel 42: delta
+			\item channel 43: theta
 		\end{itemize}
 		
-		\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.5\textwidth]{../images/EMG_II_7.jpg}	
-		\caption{Electrode positioning for knee jerk reflex}
-		\label{knee}
-		\end{figure}
+	\item Set up the measurement boxes as follows:\begin{itemize}
+		\item channel 40: stddev
+		\item channel 41: stddev
+		\item channel 42: stddev
+		\item channel 43: stddev
+	\end{itemize}
 	
-	\item Have the subject sit with their legs hanging freely over the edge of the chair.
-	\item Follow the instructions previously described under "Setting Up the Software."
-	\item Click the "Calibrate" button located in the upper left corner of the Setup window.
-	\item A pop-up window will open confirming that the subject is positioned properly. Make sure that the subject is relaxed and the hammer is placed on a flat surface.
-	\item When the subject is ready, click "OK" to start the calibration recordings. The calibration procedure will stop automatically after 12 seconds.
-	\item During the calibration, lightly strike the hammer 2-3 times and flex your muscle of interest. Check to see if the resulting data resembles Fig. \ref{calibration2}. If not, recheck connections and repeat.
-	\item Select "Record" when you are ready to start recording.
-	\item Strike the patellar ligament on the knee and observe the resulting reflex contraction.
-	\item Continue recording and repeat the strike on the patellar ligament 15-20 times, as necessary, to get consistent data.
-	\item Click on the "Suspend" button to pause or stop recording.
-	\item Determine the reaction times for each strike and record them on your handout. Additionally, determine the magnitude of the hammer strike and the EMG pulse for each strike. For all three measurements, calculate the mean and standard deviation.
-	\item Is there a relationship between hammer strike force and reaction time? Explain.
-	\item Is there are relationship between hammer strike force and the magnitude of the muscle response? Explain.
-	\item Measure the length of this reflex arc, realizing that it involves the L2, L3, and L4 segments of the spinal cord. Calculate an estimate of the nerve conduction velocity. Do you expect this to be an overestimate or an underestimate? Why? \textbf{Record the conduction velocity as you will need this information for your post-lab assignment}.
-	\item Do not remove the electrodes. After checking your results (and before you exit this screen and begin data analysis), continue to the following section.
+	\item Use the I-beam tool to obtain the data you need for your handout.
+	\item What information does using the computed value of the standard deviation of the amplitude give you as compared to other statistical measurements such as the mean of the amplitude?
+	\begin{info}
+		\textit{Freq} converts the time segment of the selected region into a frequency in cycles/second. You must be careful to select an area that contains only one cycle of the wave.
+	\end{info}
+	
+	\item Zoom in to displace 3-4 seconds of data during the first 10 seconds of eyes closed by clicking on the magnifying glass icon in the bottom right corner and clicking on the graph where you would like to zoom in.
+	\item Using the I-beam selection tool, select a representative alpha waveform to complete the second table in your handout.
+	\item Repeat for two other alpha wave cycles.
+	\item Repeat steps 5 and 6 for the remaining types of waves: beta, delta, and theta.
+	\item Save the data file.
+	\item Are the frequencies within the range of expected, published values?
+	\item Examine the alpha and beta waveforms for change between the "eyes closed" and "eyes open" states. Does desynchronization of the alpha rhythm occur when the eyes are open? Explain.
+	\item Does the beta rhythm become more pronounced in the "eyes open" state?
+	\item Examine the delta and theta rhythms. Is there an increase, decrease, or no change in the delta and theta activity when the eyes are open? Explain your observations.
+	\item Could you see evidence of synchrony and/or alpha block in your EEG measurements? Explain.
 \end{enumerate}
 
-\subsection*{Jendrassik Maneuver}
+\section*{Setting Up for Experiment 2}
 \begin{enumerate}
-	\item Maintain the electrodes and leads as described in the previous section.
-	\item Have the subject remain seated with their legs hanging freely over the edge of the chair.
-	\item Have the subject perform the Jendrassik Maneuver. To perform this maneuver, the subject must grip both hands together across their chest and attempt to pull them apart with maximum force while the knee jerk reflex is obtained (Fig. \ref{jendrassik}).
-	
-		\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.4\textwidth]{../images/EMG_II_8.jpg}	
-		\caption{Jendrassik maneuver}
-		\label{jendrassik}
-		\end{figure}
-
-	\item Conduct the procedure given in steps 8-11 of the previous section to collect the necessary data.
-	\item From the pop-up window, select "Analyze current data file."
-	\item Determine the reaction times for each strike and record them on your handout. Additionally, determine the magnitude of the hammer strike and the EMG pulse for each strike. For all three measurements, calculate the mean and standard deviation.
-	\item How do the reaction times during the Jendrassik maneuver compare to the regular procedure? Explain the change or lack of change.
-	\item How do the muscle response magnitudes during the Jendrassik maneuver compare to the regular procedure? Recall the negative feedback diagram (Fig. \ref{feedback}). Which variable do you think has changed?
-	\item One feature of negative feedback systems with high gain is \textit{ringing}, the presence of transient oscillations in the regulated variable before it settles to a steady-state value. Did you observe ringing in any of your experiments? If so, in what test(s)? Briefly describe how this occurs in terms of the feedback diagram. Why does high gain make ringing more likely?
+	\item Keep the setup the same as in the first experiment and make sure the electrodes are still secure to the subject.
+	\item Open BSL lesson L04-EEG-2.
+	\item Prepare the subject by having them either sit in a chair or lie down on a yoga mat. They should be relaxed with their eyes closed. Throughout the experiment, you will need to insert markers to separate the segments.
 \end{enumerate}
+
+\section*{Data Acquisition}
+Be sure to read all of the instructions before beginning any data collection.
+
+Tips for successful data collection:
+\begin{itemize}
+	\item Try not to blink during the eyes open segment.
+	\item The subject should not talk out loud during any of the recordings.
+	\item Try to focus on breathing slowly and relaxing for the eyes closed segments.
+	\item During the mental math section, make sure the subject is challenged and doing math the entire time, but do not make it too challenging that they give up on the problem. A good way to do it is by giving the subject double digit numbers to add.
+	\item Make sure the subject is not still hyperventilating during the recovery section.
+\end{itemize}
+
+\subsection*{Segment 1: Eyes Closed}
+\begin{enumerate}
+	\item Click Record. The subject should have their eyes closed and be relaxed for 10 seconds. After 10 seconds, click Suspend.
+\end{enumerate}
+
+\subsection*{Segment 2: Performing Arithmetic}
+\begin{enumerate}
+	\item The lab partner who is not connected to the electrodes should verbally tell the subject a set of mental math problems while the subject remains relaxed with their eyes closed.
+	\item Record this segment for 20 seconds. After 20 seconds, click Suspend.
+\end{enumerate}
+
+\subsection*{Segment 3: Hyperventilation}
+\begin{enumerate}
+	\item The lab partner who is not connected to the electrodes should now instruct the subject to hyperventilate for 2 minutes while the subject has their eyes closed.\begin{warn}
+		Stop the procedure if the subject feels sick or dizzy.
+	\end{warn}
+	
+	\item At the end of the 2 minute period, click Resume. Do this as fast as possible.
+	\item Record for 10 seconds while the subject is recovering from hyperventilation. During this time, the subject should be in a relaxed state with their eyes closed.
+	\item After 10 seconds, click Suspend.
+\end{enumerate}
+
+\subsection*{Section 4: Eyes Open}
+\begin{enumerate}
+	\item The lab partner who is not connected to the electrodes should instruct the subject to open their eyes and remain relaxed.
+	\item Clock on Resume and record for 10 seconds.
+	\item After 10 seconds, click Suspend.
+	\item When you are ready to review your data, click "Done" and save your data. You may now remove the electrode cables and peel off the electrodes.
+\end{enumerate}
+
+\section*{Data Analysis}
+\begin{enumerate}
+	\item Mark the channel numbers as follows:\begin{itemize}
+		\item channel 1: raw EEG
+		\item channel 40: alpha rhythm
+		\item channel 41: alpha RMS
+	\end{itemize}
+	
+	\item Set up the measurement boxes as follows:\begin{itemize}
+		\item channel 1: stddev
+		\item channel 40 stddev
+		\item channel 41: mean
+		\item channel 40: freq
+	\end{itemize}
+	
+	\item Use the I-Beam tool to analyze the data you need to complete the table in your handout.
+	\item Under what conditions where the alpha wave amplitudes highest? Why?
+	\item How did the level of concentration (focused thinking) affect the data?
+	\item What kind of differences would you expect when measuring the amplitude of alpha and beta waves recorded from a subject tested alone in a darkened room and a subject tested in a lab full of students? Justify.
+\end{enumerate}
+
+\begin{info}
+	Export data from Segment 1 (eyes open) and Segment 3 (hyperventilation). You will need these values to complete your post-lab assignment.
+\end{info}
 \end{document}
