@@ -1,0 +1,40 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,}
+\usepackage{booktabs}
+\usepackage{textgreek}
+
+\input{../structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Week 5 Post-Lab}
+\author{BIOE 320 Systems Physiology Laboratory} 
+\date{}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+\large
+
+\textbf{Student Name:}\hfill 	\textbf{Total Grade:\ \ \ \ /10}\vspace{0.5cm}
+
+\begin{info}
+	The data for this lab can be found ()
+\end{info}
+
+\begin{enumerate}
+	\item Write a simple program to take data from HeartRate.xls and determine the heart rate of this ECG recording (sampling rate = 1000 Hz). You should use a design called a peak detector; using this tool, a beat is recorded when the signal crosses a certain threshold value. You may use Matlab, Python, Excel, or another program. Attach an annotated copy of your program. Give the heart rate for the period.
+	\item A common problem in clinical practice is the false positive alarms with heart monitors. A noisy signal can falsely signal a tachycardia alarm while a loose electrode or an alarm threshold set too high can likewise signal a bradycardia alarm.
+	\begin{enumerate}
+		\item Design a detector that will not be too sensitive to false readings by developing an equation or algorithm with which the detector will process the incoming data. The sampling algorithm should process and use recent data as well as the "last" heart beat. Over what time interval should the algorithm incorporate data to calculate a running heart rate? Should all heartbeats be weighed equally in determining a reported rate?
+		\item Suppose that a patient's heart stops beating. How long will it take for your detector to "notice"? In light of this response time, evaluate the safety of your design. Consider logistics such as nurse/doctor response time, the length of time once a person's heart stops beating until irreparable damage occurs, etc?
+	\end{enumerate}
+\end{enumerate}
+\end{document}
