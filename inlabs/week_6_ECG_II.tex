@@ -25,37 +25,65 @@
 
 \section*{Objectives}
 \begin{enumerate}
-	\item To become familiar with the ECG as a primary tool for evaluating electrical events within the heart
-	\item To correlate electrical events as displayed on the ECG with the mechanical events that occur during the cardiac cycle
-	\item To observe rate and rhythm changes in the ECG associated with the body position and breathing
-	\item To observe the effects of changing ECG sampling rate on the ECG recordings
+	\item To record ECG measurements from leads I and III in the following conditions: lying down, sitting up, and breathing deeply while sitting.
+	\item To use Einthoven's Law to estimate the mean electrical axis and magnitude of the QRS complex.
 \end{enumerate}
 
 \section*{Background}
-The heart is the physiological engine of the circulatory system, receiving blood from veins and pumping it into arteries. The contractions of myocardium (heart tissue) are a result of electrical signals that originate in the sinoatrial (SA) node of the heart. The SA node acts as a pacemaker for the rest of the heart, keeping a constant rhythm. Based on changing physiological demands, the frequency of impulses can be sped up or slowed down by extrinsic motor nerves via sympathetic and parasympathetic pathways, respectively.
 
-\subsection*{Electrical Pathways}
+
+\subsection*{Electrical Activity of the Heart (Review)}
 \begin{figure}[h]
-\centering\includegraphics[width=0.5\textwidth]{../images/ECG_I_1.jpg}
-\caption{Schematic of the cardiac conduction system}
-\label{pathways}
-\end{figure}
-Electrical impulses (Fig. \ref{pathways}) proceed from the SA node, causing atrial muscles to contract by producing an action potential (depolarization). The signal is then conducted to the atrioventricular (AV) node, which lies between the right atrium and ventricle. After a short delay to allow blood to flow out of the atria and into the ventricles, the AV node relays the electrical signal to the bundle of His where the signal splits between the right and left bundle branches. These branches continue to subdivide into Purkinje fibers, which pass on the action potential to ventricular muscle, stimulating the ventricles to contract. After depolarization takes place, subsequent repolarization occurs in which cardiac cells return to their resting state and the cardiac muscles relax.
-
-\subsection*{Electrocardiogram}
-The electric currents that travel through the heart can be picked up on the surface of the body in the form of electrical potential. Plotted against time, these readings are known as an electrocardiogram (ECG, seen in Fig. \ref{ecg}).\\
-
-\begin{figure}[h]
-\centering\includegraphics[width=0.6\textwidth]{../images/ECG_I_2.jpg}
-\caption{Schematic of an electrocardiogram}
-\label{ecg}
+\centering\includegraphics[width=0.4\textwidth]{../images/ECG_II_1a.jpg}
+\centering\includegraphics[width=0.3\textwidth]{../images/ECG_II_1b.jpg}
+\caption{The pacemaker system and the PQRST wave}
+\label{pacemaker}
 \end{figure}
 
-There are many different ways to place the electrodes to measure an ECG signal. In the lab today, we will use standard bipolar leads, in which 2 electrodes (positive and negative) are located on different sides of the heart and are measured against a common ground (third electrode).\\
+The heart's electrical system begins at the sinoatrial (SA) node, the primary pacemaker of the heart, where electric potential originates. The polarization spreads throughout the atria, initiating contraction of atrial myocardium (P wave of ECG). The signal then travels to the AV node where it is delayed, allowing time for the blood to leave the atria before ventricular contraction begins. After the AV nodes, the signal is conducted down the left and right bundle branches and the Purkinje fibers to the ventricular myocardium. Depolarization of the ventricles is recorded as the QRS complex in the ECG, and repolarization of the ventricles is recorded as the T wave. This process is summarized in Fig. \ref{pacemaker}. In the last lab, we saw how the heart's electrical activity can be analyzed using an ECG (specifically, the standard bipolar lead II). This week, we will explore how to interpret the magnitude and direction of the ECG signal and how to estimate the mean electrical axis of the QRS complex.
 
-The baseline of the ECG is known as the isoelectric line. The first peak, called the P wave, correlates to depolarization of the atrial muscle. The QRS system represents both the depolarization of the ventricular muscle as well as repolarization of the atrial muscle. Finally, the T wave correlates to the repolarization of the ventricles.\\
+\subsection*{Einthoven's Law}
+ECGs are produced by a system of leads attached to the body. One common lead system uses the three standard bipolar limb leads. The electrode placement defines the recorded direction of the lead, when going from the negative to the positive electrode. The ECG is read as the computed difference (magnitude) between the positive and negative electrodes as a change in voltage over time.\\
 
-The PR interval is measured from the beginning of the P wave to the beginning of the QRS complex. Physiologically, it represents the time interval between atrial and ventricular depolarization. An abnormally long PR interval suggests conduction problems between the SA node and AV node. The QT interval is measured from the Q wave to the end of the T wave and is also known as ventricular systole, or period of ventricular contraction. Ventricular diastole is the period from the end of the T wave to the peak of the P wave. Finally, the period of atrial contraction, or atrial systole, is measured from the peak of the P wave to the Q wave.
+The standard bipolar lim leads, their polarity, and axes are as follows:
+\begin{table}[h]
+	\centering
+	\begin{tabular}[h!]{ccc}
+	\toprule
+	Lead & Polarity & Lead Axis\\
+	\midrule
+	Lead I & right arm (-) to left arm (+) & 180\textdegree\ to 0\textdegree\\
+	 Lead II & right arm (-) to left leg (+) & -120\textdegree\ to 60\textdegree\\
+	 Lead III & left arm (-) to left leg (+) & -60\textdegree\ to 120\textdegree\\
+	\bottomrule
+	\end{tabular}
+	\end{table}
+
+The placement of the leads is the result of the extension of Einthoven's Triangle, a triangle of three leads that surrounds the heart. The ECG for each lead displays the amplitude of the voltage as projected onto that lead. To determine the value closest to the actual direction of the heart, Lead II is usually used. However, because the three leads are connected in a loop, Kirchoff's Voltage Law (KVL) states that the voltage drop around the loop must be equal to zero, and therefore, Einthoven's Law can be used to determine the value of one lead if we know the value of the other two.
+
+\subsection*{Mean Electrical Axis: Direction}
+During the cardiac cycle, the current spreads along specialized pathways, depolarizing the heart in a specific sequence. Consequently, the electrical activity has .directionality, that is, a spatial orientation represented by an electrical axis. The summation of all the vectors occurring in a cardiac cycle (i.e. the preponderant direction of current flow during the cardiac cycle) is called the mean electrical axis (Fig. \ref{axis})
+
+\begin{figure}[h]
+\centering\includegraphics[width=0.5\textwidth]{../images/ECG_II_2.jpg}
+\caption{Mean vector through partially depolarized ventricles}
+\label{axis}
+\end{figure}
+
+Since the QRS complex caused by ventricular depolarization represents the majority of the electrical activity of the heart, you can approximate the mean electrical axis by looking only in this interval. Typically, in an adult, the mean electrical axis lies along a line extending from the base of the apex of the heart and to the left of the interventricular septum pointing toward the lower left rib cage.
+
+\subsection*{Mean Electrical Axis: Magnitude}
+The magnitude of the recorded voltage in the ECG is directly proportional to the amount of tissue being depolarized. Most of the mass of the heart is made up of ventricular myocardium. Therefore, the largest recorded waveform, the QRS complex, reflects the depolarization of the ventricles. Furthermore, since left ventricular mass is significantly greater than right ventricular mass, more of the QRS complex reflects the depolarization of the left ventricle and thus the orientation of the mean electrical axis is to the left of the interventricular septum.
+
+\subsection*{ECG Interpretation}
+A good mathematical tool for representing the measurement of a lead is the vector. At any given moment during the cardiac cycle, a vector may represent the net electrical activity seen by a lead (Fig. \ref{vector}). The length of the arrow represents the magnitude of the electrical current. The orientation of the arrow represents the direction of current flow. The tip of the arrow represents the positive pole of the electrical current, and the tail represents the negative pole.
+
+\begin{figure}[h]
+\centering\includegraphics[width=0.7\textwidth]{../images/ECG_II_3.jpg}
+\caption{Projection of the mean electrical axis onto lead I (vector B)}
+\label{vector}
+\end{figure}
+
 
 \section*{Required Supplies}
 \begin{itemize}
