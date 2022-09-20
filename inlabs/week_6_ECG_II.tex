@@ -14,7 +14,7 @@
 %	ASSIGNMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Week 5: Electrocardiography (ECG) II}
+\title{Week 6: Electrocardiography (ECG) II}
 \author{BIOE 320 Systems Physiology Laboratory} 
 \date{}
 %----------------------------------------------------------------------------------------
@@ -84,168 +84,82 @@ A good mathematical tool for representing the measurement of a lead is the vecto
 \label{vector}
 \end{figure}
 
-
-\section*{Required Supplies}
-\begin{itemize}
-	\item BIOPAC student labs lesson L05: ECG I
-	\item BIOPAC MP3X data acquisition unit
-	\item BIOPAC electrode lead set
-	\item BIOPAC disposable vinyl electrodes
-	\item Optional but useful: alcohol wipes, abrasive pads, physiology tape, electrode gel
-\end{itemize}
-
-\section*{Setting Up}
+\section*{Experimental Methods}
+\subsection*{Electrode Placement}
 \begin{enumerate}
-	\item Turn on the MP3X acquisition unit by flipping the switch found on the back panel.
-	\item Place electrodes and leads on the subject as follows (Fig. \ref{ecg}):\begin{itemize}
-		\item Positive (red): inside of left ankle, just above the ankle bone
-		\item Negative (white): inside of the right wrist
-		\item Ground (black): right ankle bone
-	\end{itemize}
-	\begin{figure}[h]
-	\centering\includegraphics[width=0.4\textwidth]{../images/ECG_I_3.jpg}
-	\caption{Schematic of electrode lead placement}
-	\label{ecg}
-	\end{figure}
-	
-	\item Plug the electrode cord, SS2L, into channel 2 and connect to the electrodes.
-	\item Open Biopac Pro v3.7 (\textbf{not the student lessons})
-	\item Go under the MP3X pull-down menu and select Set-up Acquistion (Fig. \ref{setup}).
-	\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/ECG_I_4.jpg}
-	\caption{Set-up acquisition window}
-	\label{setup}
-	\end{figure}
-	
-	\item Set the sampling rate to 20/sec. Click reset and close the box.
-	\item Go under the MP3X pull-down menu and select Set-up Channels (Fig. \ref{setup_2}).
-	\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/ECG_I_4.jpg}
-	\caption{Set-up channels}
-	\label{setup_2}
-	\end{figure}
-	
-	\item Under the presets drop-down arrow, select ECG 0.05 Hz - 150 Hz for both channels 1 and 3.
-	\item Check all 3 boxes for channel 2. Deselect all boxes for channels 1 and 3.
-	\item Take a sample 30 sec ECG recording by pressing Start.
-\end{enumerate}
-
-\subsection*{Changing Sampling Rate}
-\begin{enumerate}
-	\item Go under the MP3X pull-down menu and select Set-Up Acquisition (Fig. \ref{setup}).
-	\item Set the sampling rate to 200/sec.
-	\item Take another 30 sec ECG recording by pressing Start.
-	\item Close BIOPAC Pro Software. Do NOT remove electrodes or leads from the subject.
-	\item What are the differences between the recordings at 20 Hz and 200 Hz?
-	\item What criteria should be used to establish an appropriate sampling rate?
-\end{enumerate}
-
-\section*{Experiments}
-\subsection*{Setting Up}
-\begin{enumerate}
-	\item Plug the electrode cord into channel 1 and connect the electrodes.
-	\item Launch the BIOPAC software by clicking on the BSL Lessons 3.7.6 icon and select L05-ECG-1 as shown in Fig. \ref{lesson}.
-		
-		\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/ECG_I_6.jpg}
-		\caption{Selecting BIOPAC lesson L05-ECG-I}
-		\label{lesson}
-		\end{figure}
-\end{enumerate}
-
-\subsection*{Calibration}
-\begin{info}
-	The calibration procedure establishes the hardware's internal parameters (such as gain, offset, and scaling) and is critical for optimum performance. Pay close attention to the calibration procedure.
-\end{info}
-\begin{enumerate}
-	\item Check that electrodes are still adhered to the skin, If they are being pulled up, you will not get a good ECG signal. The subject must be relaxed and as still as possible during the calibration procedure. The ECG is very sensitive to small changes in voltage caused by contraction of skeletal muscles, so the subject's arms and legs need to be relaxed so that the muscle (EMG) signal does not corrupt the ECG signal.
-	\item Click on Calibrate. The calibration procedure will begin and then stop automatically after 8 seconds. At the end of the calibration recording, the screen should resemble Fig. \ref{calibration} below. There should be a regular, periodic ECG waveform with a relatively flat baseline. Some tips for obtaining optimal data:\begin{itemize}
-		\item The subject should not talk or laugh during any of the recording segments.
-		\item The subject should be in a relaxed state for each recording segment and in the position noted for each segment.
-		\item When the subject is asked to sit up, they should do so in a chair, with arms relaxed.
-		\end{itemize}
-		
-		\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/ECG_I_7a.jpg}
-	\includegraphics[width=0.6\textwidth]{../images/ECG_I_7b.jpg}
-		\caption{Example calibration}
-		\label{calibration}
-		\end{figure}
-		
-	\item If the data recording shows any jitter or large baseline drifts, you should redo the calibration by clicking on the Redo Calibration button.
-\end{enumerate}
-
-\subsection*{Segment 1: Supine (Laying Down)}
-\begin{enumerate}
-	\item Prepare for the recording by having the subject lie down and relax with their eyes closed.
-	\item Click on Record, and record data for 20 seconds, then click on Suspend at the 20 second mark. Proceed unless:
-		\begin{itemize}
-			\item The suspend button was pressed prematurely.
-			\item An electrode peeled up, causing a large baseline drift, spike, or loss of signal.
-			\item The subject has too much muscle (EMG) artifact.
-		\end{itemize}
-\end{enumerate}
-
-\subsection*{Segment 2: Sitting Up}
-\begin{enumerate}
-	\item Starting from the supine position, have the subject sit up quickly. Click on Resume and record for another 20 seconds. The recording will continue from the point where it last stopped and a marker labeled "sitting up" will automatically come up when Resume is pressed.\begin{info}
-In order to capture the heart rate variation, it is important that you click on Resume to continue recording as quickly as possible after the subject sits up. However, it is also important that you do not click on Resume while the subject is \textit{in the process of} sitting up or you will capture motion artifact.	
-\end{info}
-
-	\item Click on Suspend at the end of the 20 second recording segment (at the 40 second mark total). Proceed unless you see any of the conditions described in Segment 1.
-\end{enumerate}
-
-\subsection*{Segment 3: Deep Breaths}
-\begin{enumerate}
-	\item Click on Resume. The recording will continue from the point where it last stopped, and a marker labeled "5 deep breaths" will automatically come up when Resume is pressed.
-	\item Record for 20 seconds and have the subject take in 5 deep breaths during recording. The 5 deep breathing cycles should be deeper and slower than normal breathing at rest and should follow one another.
-	\item During this time, the person operating the software should insert a marker at the beginning of an inhale and insert another marker at the corresponding exhale. The recorder should label these markers "inhale" and "exhale" (note: the hotkey for a marker is F9).
-	\item At the end of the 20 second recording segment, click on Suspend. Note that deep breathing may produce a baseline drift. This is normal and does not necessitate redoing the recording.
-\end{enumerate}
-
-\subsection*{Segment 4: Light Exercise}
-\begin{enumerate}
-	\item Disconnect the electrode leads (do not remove the electrodes) and have the subject move to a safe area and perform an exercise that will elevate their heart rate fairly rapidly (e.g. push-ups, jumping jacks).
-	\item Immediately after the exercise, have the subject assume a sitting position and reconnect the electrode leads: \begin{itemize}
-		\item Positive (red): inside of left ankle, just above the ankle bone
-		\item Negative (white): inside of the right wrist
-		\item Ground (black): right ankle bone
+	\item Place electrodes following the configuration for lead I:\begin{itemize}
+		\item Red (+): left arm
+		\item White (-): right arm
+		\item Black (ground): right ankle
 	\end{itemize}
 	
-	\item After the subject is stationary, click on Resume. The recording will continue from the point where it last stopped, and a marker labeled "after exercise" will automatically come up when you click Resume.
-	\item Record the post-exercise ECG for 60 seconds, then click on Suspend (120 second mark total). Again, the baseline may drift, but this is fairly normal unless iti s excessive.
-	\item Click on Done. A pop-up window with six options will appear, select "Analyze Data From Current Subject."
-	\item Remove the electrode cable pinch connectors and peel off the electrodes. Throw out the electrodes. The electrodes may leave a slight ring on the skin for a few hours, which is quite normal.
+	\item Place electrodes following the configuration for lead III:\begin{itemize}
+		\item Red (+): left leg
+		\item White (-): left arm
+		\item Black (ground): right ankle
+	\end{itemize}
+	
+	\item Plug leads I and III into channels 1 and 3, respectively.
+	\item Open the Biopac Lab PRO software (NOT Biopac student lab lessons).
+	\item Go to the MP3X pull down menu (Fig. \ref{menu}).
+		\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/ECG_II_4.jpg}
+		\caption{MP30 pull down menu}
+		\label{menu}
+		\end{figure}
+		
+	\item Select "Set-up Acquisition" and set the sampling rate to 200 (Fig. \ref{menu_2}.
+		\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/ECG_II_5.jpg}
+		\caption{Setting the sampling rate}
+		\label{menu_2}
+		\end{figure}
+		
+	\item Select "Set-up Channels" from the MP3X pull down menu.
+	\item Check all the boxes for channels 1 and 3 (Fig. \ref{boxes}).
+		\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/ECG_II_6.jpg}
+		\caption{Check all the boxes for channels 1 and 3}
+		\label{boxes}
+		\end{figure}
+		
+	\item Select ECG (0.05 Hz - 150 Hz) from the "Presets" to the right of each channel. Close the box.
 \end{enumerate}
 
-\section*{Data Analysis}
-\subsection*{Segment 1}
+\subsection*{Data Collection}
+You will perform data acquisition for four different conditions (supine, sitting up, inhaling, and exhaling). Calibration is not needed for this lab. Remember to insert markers to separate conditions, and to save the data file at the end.
+\subsubsection*{Supine}
 \begin{enumerate}
-	\item Determine the time and beats per minute of three cardiac cycles and record in Table 1 of the handout. Calculate the means.
-	\item Complete Table 2 for the different components of the ECG for Cardiac Cycle 1.
-	\item Is there always one P wave for every QRS complex? If not, what would this signify?
-	\item Compare and contrast the shape (duration and amplitude) of the P and T waves. Give the mechanical and electrical reasons for the differences.
+	\item Have the subject lay in supine position on a mat with eyes closed. Make sure the subject remains relaxed and still.
+	\item Collect data for 20 seconds (press the start button on the bottom right hand corner).
+	\item Click the "Suspend" button to pause or stop recording.
 \end{enumerate}
 
-\subsection*{Segment 2}
+\subsubsection*{Sitting Up}
 \begin{enumerate}
-	\item Complete Table 3.
-	\item Explain the observed heart rate variations in sitting up vs. supine positioning. Describe the physiological mechanisms causing these differences.
+	\item Have the subject sit upright in a chair. Make sure the subject remains relaxed and still.
+	\item Collect data for 10 seconds.
+	\item Click the "Suspend" button to pause or stop recording.
 \end{enumerate}
 
-\subsection*{Segment 3}
+\subsubsection*{Inspiration and Expiration}
 \begin{enumerate}
-	\item Complete Table 4.
-	\item Are there differences in the cardiac cycle with the respiratory cycle (inspiration vs. expiration)? If so, what is the physiological basis for these differences?
+	\item Have the subject remain seated.
+	\item Collect data while the subject deeply inspires and expires, approximately 5 times in a period of 20 seconds.
+	\item Place a marker after each inspiration and expiration, making sure to label them properly.
+	\item Click the "Suspend" button to pause or stop recording.
 \end{enumerate}
 
-\subsection*{Segment 4}
+\subsection*{Data Analysis}
 \begin{enumerate}
-	\item Complete Tables 5 and 6.
-	\item What changes occurred in the duration of systole and diastole between resting and immediately after exercise? What could account for these changes?
+	\item Record the maximum electrical magnitude (amplitude) of the R waves for each condition for each of the two leads in the handout. Make sure the data corresponds to the correct lead number.
+	\item Using data from the table, graphically determine the Mean Electrical Magnitude and Mean Electrical Axis for the conditions of Supine and Sitting Up. You may plot the values from both conditions on the graph on the handout.
+	\item Explain the difference (if any) in the amplitudes of Leads I and III, as well as the Mean Electrical Magnitude and Axis under the two conditions.
+	\item Using data from the table, graphically determine the Mean Electrical Magnitude and Mean Electrical Axis for the conditions of Inhaling and Exhaling. You may plot the values from both conditions on the graph on the handout.
+	\item Explain the difference (if any) in the amplitudes of Leads I and III, as well as the Mean Electrical Magnitude and Axis under the two conditions.
+	\item Give normal ranges of the mean electrical axis. Is your data within range?
+	\item What factors affect the orientation of the mean electrical axis (list at least 2)?
+	\item What factors affect the amplitude of the R wave recorded on the different leads (list at least 2)?
+	\item It is unlikely your ECG data looks exactly like "textbook" data. List at least 3 sources of experimental error.
 \end{enumerate}
-
-\begin{warn}
-	The data that you will need for your post-lab is located on (find a good location).
-\end{warn}
 \end{document}
