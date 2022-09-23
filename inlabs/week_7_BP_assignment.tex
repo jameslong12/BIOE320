@@ -1,0 +1,131 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,}
+\usepackage{booktabs}
+\usepackage{textgreek}
+
+\input{../structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Week 7: Blood Pressure (BP)}
+\author{BIOE 320 Systems Physiology Laboratory} 
+\date{}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\large
+\maketitle
+
+\section*{Data Analysis}
+\begin{itemize}
+
+	\begin{table}[h]
+	\centering
+	\caption{Systolic pressures}
+	\begin{tabular}[h!]{p{0.15\linewidth}|p{0.25\linewidth}p{0.25\linewidth}p{0.25\linewidth}}
+	\toprule
+	Condition & Marker (mmHg) & Microphone (mmHg) & Error (mmHg)\\
+	\midrule
+	Left arm & & &\\(sitting up) & & &\\\midrule
+	Right arm & & &\\(sitting up) & & &\\\midrule
+	Right arm & & &\\(lying down) & & &\\\midrule
+	Right arm & & &\\(after exercise) & & &\\
+	\bottomrule
+	\end{tabular}
+	\end{table}\vspace{1cm}
+
+	\begin{table}[h]
+	\centering
+	\caption{Diastolic pressures}
+	\begin{tabular}[h!]{p{0.15\linewidth}|p{0.25\linewidth}p{0.25\linewidth}p{0.25\linewidth}}
+	\toprule
+	Condition & Marker (mmHg) & Microphone (mmHg) & Error (mmHg)\\
+	\midrule
+	Left arm & & &\\(sitting up) & & &\\\midrule
+	Right arm & & &\\(sitting up) & & &\\\midrule
+	Right arm & & &\\(lying down) & & &\\\midrule
+	Right arm & & &\\(after exercise) & & &\\
+	\bottomrule
+	\end{tabular}
+	\end{table}\vspace{0.5cm}
+
+	\item[1.] Give one reason why blood pressure in the left arm may be different than blood pressure in the right arm for the sitting up condition.\pagebreak
+	\item[2.] Using the ECG data, calculate the beats per minute (BPM) for the four conditions measured.
+	
+	\begin{table}[h]
+	\centering
+	\caption{BPM for two cardiac cycles}
+	\begin{tabular}[h!]{p{0.15\linewidth}|p{0.25\linewidth}p{0.25\linewidth}p{0.25\linewidth}}
+	\toprule
+	Condition & Cycle 1 & Cycle 2 & Mean\\
+	\midrule
+	Left arm & & &\\(sitting up) & & &\\\midrule
+	Right arm & & &\\(sitting up) & & &\\\midrule
+	Right arm & & &\\(lying down) & & &\\\midrule
+	Right arm & & &\\(after exercise) & & &\\
+	\bottomrule
+	\end{tabular}
+	\end{table}\vspace{0cm}
+	
+	\item[3.] Calculate mean arterial pressure (MAP) and pulse pressure for the four conditions measured.
+	
+	\begin{table}[h]
+	\centering
+	\caption{MAP and pulse pressure}
+	\begin{tabular}[h!]{p{0.15\linewidth}|p{0.25\linewidth}p{0.25\linewidth}}
+	\toprule
+	Condition & MAP (mmHg) & P\textsubscript{pulse}\\
+	\midrule
+	Left arm & & \\(sitting up) & & \\\midrule
+	Right arm & & \\(sitting up) & & \\\midrule
+	Right arm & & \\(lying down) & & \\\midrule
+	Right arm & & \\(after exercise) & & \\
+	\bottomrule
+	\end{tabular}
+	\end{table}\vspace{0cm}
+	
+	\item[4.] Determine the time delay from the peak of an R wave to the beginning of a sound. This requires zooming into a section so that individual waves can be seen.
+	\begin{table}[h]
+	\centering
+	\caption{MAP and pulse pressure}
+	\begin{tabular}[h!]{p{0.15\linewidth}|p{0.25\linewidth}}
+	\toprule
+	Condition & \textDelta T (sec) \\
+	\midrule
+	Left arm & \\(sitting up) & \\\midrule
+	Right arm & \\(sitting up) & \\\midrule
+	Right arm & \\(lying down) & \\\midrule
+	Right arm & \\(after exercise) & \\
+	\bottomrule
+	\end{tabular}
+	\end{table}\vspace{0cm}
+	
+	\item[5.] What is this time delay a measure of?\pagebreak
+	\item[6.] We will now estimate the distance travelled by the pulse wave, by measuring the length from the sternum to the antecubital fossa and use that value to calculate the pulse speed. Use the right arm, sitting up data for these calculations.
+	
+	\begin{table}[h]
+	\centering
+	\caption{Measurements to calculate pulse wave speed}
+	\begin{tabular}[h!]{p{0.65\linewidth}|p{0.25\linewidth}}
+	\toprule
+	Distance between sternum and right shoulder (cm) & \\ & \\\midrule
+	Distance between right shoulder and antecubital fossa (cm) & \\ & \\\midrule
+	Right arm & \\(sitting up) & \\\midrule
+	Right arm & \\(lying down) & \\\midrule
+	Right arm & \\(after exercise) & \\
+	\bottomrule
+	\end{tabular}
+	\end{table}\vspace{0cm}
+	
+	\item[7.] How does the speed of the pulse wave calculated here compare with published values?\vspace{3cm}
+	\item[8.] Does your systolic and/or diastolic arterial pressure change as your heart rate increases? How does this change affect your pulse pressure?\vspace{4cm}
+	\item[9.] Name another artery other than the brachial that could be used for an indirect measurement of blood pressure and explain your choice.
+\end{itemize}
+\end{document}
