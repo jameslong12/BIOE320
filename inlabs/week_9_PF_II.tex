@@ -1,0 +1,215 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,}
+\usepackage{booktabs}
+\usepackage{textgreek}
+
+\input{../structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Week 9: Pulmonary Function (PF) II}
+\author{BIOE 320 Systems Physiology Laboratory} 
+\date{}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\large
+\maketitle
+
+\section*{Objectives}
+\begin{enumerate}
+	\item To perform mass balances on O\textsubscript{2} and CO\textsubscript{2} during respiration.
+	\item To calculate alveolar and pulmonary ventilation rates.
+	\item To obtain a value for VO\textsubscript{2}, the volume of oxygen consumed at STP per 1 minute interval, at rest, after exercise, and during hyperventilation.
+\end{enumerate}
+
+\section*{Background}
+\subsection*{Dead Space}
+Defined as the volume of gas that does not participate in gas exchange.
+\begin{itemize}
+	\item Anatomical dead space (~150 mL) results from the dead space in the conducting airways (trachea, bronchi, and bronchioles). The air in the conducting airways does not reach the alveoli and, as a result, does not participate in gas exchange.
+	\item Alveolar dead space (very small in healthy subjects) results from poor perfusion to the alveoli. When blood perfusion is limited, some alveoli (even when they contain air) will not participate in gas exchange.
+	\item Physiological dead space is the sum of the anatomical and alveolar dead space and it represents the volume of air that is inspired but does not participate in gas exchange with blood flowing through the lungs.
+\end{itemize}
+
+\subsection*{Ventilation Rate}
+Defined as the number of breaths in a given time:
+\begin{itemize}
+	\item Pulmonary or minute ventilation rate represents the volume of air breathed in and out in one minute.
+	\item Alveolar ventilation rate represents the volume of air that reaches the alveoli and is available for gas exchange in 1 minute.
+\end{itemize}
+
+\subsection*{Gas Exchange}
+The goal of breathing is to provide a continuous supply of O\textsubscript{2} to the tissues and to constantly remove CO\textsubscript{2}. This gas exchange at both the pulmonary and the tissue capillary levels involves simple passive diffusion of O\textsubscript{2} and CO\textsubscript{2} down partial pressure gradients.\\
+
+Atmospheric air is a mixture of gases (about 79\% nitrogen and 21\% oxygen, with almost negligible percentages of CO\textsubscript{2}, water vapor, other gases, and pollutants. Altogether, these gases exert a total atmospheric pressure of 760 mmHg at sea level. This total pressure is equal to the sum of the pressures that each gas in the mixture partially contributes. The pressure exerted by a particular gas is directly proportional to the percentage of that gas in the total air mixture. For example, the partial pressure (or the individual pressure exerted by a gas within a mixture of gases) of oxygen (P\textsubscript{O2}) in atmospheric air is normally 160 mmHg, whereas the atmospheric partial pressure of CO\textsubscript{2} (P\textsubscript{CO2}) is 0.03 mmHg. Since there is a difference in partial pressures between alveolar air and pulmonary capillary blood (e.g. P\textsubscript{O2, alveoli} > P\textsubscript{O2, blood}), gas will diffuse down its partial pressure gradient from the area of higher partial pressure to the area of lower partial pressure (Fig. \ref{partial}).
+
+\begin{figure}[h]
+\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_1.jpg}
+\caption{Gas exchange in the lungs}
+\label{partial}
+\end{figure}
+
+In addition to partial pressure gradients, there are several factors that can influence the rate of gas transfer:
+\begin{itemize}
+	\item \textbf{Surface area}: An increase in surface area of the alveolar membrane will result in an increased rate of transfer. Surface area remains fairly constant under resting conditions, but can change with exercise
+\end{itemize}
+
+\section*{Experiment 1}
+\subsection*{Hardware and Software Setup}
+\begin{enumerate}
+	\item Plug the output line from the airflow transducer into channel 1 of the MP3X unit.
+	\item Insert the filter into the inlet opening of the airflow transducer.
+	\item Insert the calibration syringe into the other end of the filter (away from the airflow transducer) as seen in Fig. \ref{xdc}
+		\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_4.jpg}
+		\caption{Transducer setup}
+		\label{xdc}
+		\end{figure}
+		
+	\item Turn the MP3X unit on.
+	\item From the desktop, open BIOPAC student lab 3.7. Selected L12 - PF 1.
+\end{enumerate}
+
+\subsection*{Calibration}
+\begin{enumerate}
+	\item Make sure to always handle this setup by holding the syringe, rather than the handle of the airflow transducer. This will ensure that the equipment remains properly aligned.
+	\item Pull the syringe handle all the way out.
+	\item Read the instructions below, then click the "Calibrate" button located int he upper left corner of the Setup window.
+	\item During this recording, simply hold the assembly still and upright. Recording will end after 8 seconds and your screen should display a straight line.
+	\item During this next part, you will push the syringe plunger in and out for a total of 5 cycles (push in and pull out for a total of 10 strokes). Pace yourself and try to achieve slow, smooth movement. Rest for a short time in between each plunge.
+	\item Hold the syringe horizontally in one hand and use the other hand to plunge in and out completely.
+	\item When you are ready to begin, click "OK" to start the calibration.
+	\item When you finish calibrating, click "End Calibration." Your screen should resemble Fig. \ref{calibration}.
+		\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_5.jpg}
+		\caption{Calibration procedure - plunge cycles}
+		\label{calibration}
+		\end{figure}
+	
+	\item If your calibration looks incorrect, click "Redo" and repeat the procedure.
+\end{enumerate}
+
+\subsection*{Test Procedure}
+\begin{info}
+	Keep the airflow transducer upright at all times during the experiment. If you start on an inhale, try to end on an exhale as this increases the accuracy of the airflow to volume calculation. Try not to look at the screen while recording as you may manipulate the results.
+\end{info}
+\begin{enumerate}
+	\item Remove the calibration syringe and replace it with a disposable mouthpiece.
+	\item Attach the nose clip to the subject's nose.
+	\item Breathe normally through the mouthpiece for 20 seconds prior to the start of recording.
+	\item Select "Record" when the subject is ready (Begin recording on an inhale).
+	\item The subject must:\begin{enumerate}
+		\item Continue breathing normally for 5 breath cycles.
+		\item After a resting expiration, inhale as deeply as possible.
+		\item Exhale to the point of normal resting expiration and continue breathing normally for 3-5 breaths.
+		\item After a resting inspiration, maximally exhale (as completely as possible).
+		\item Breathe normally for 5 breath cycles.
+	\end{enumerate}
+	
+	\item When you are done recording, click on "Stop."
+	\item If the data resembles Fig. \ref{example}, click "Done." Otherwise, click "Redo" and try again.
+	
+		\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_6.jpg}
+		\caption{Example pulmonary function data}
+		\label{example}
+		\end{figure}
+	
+	\begin{info}
+		You will not be able to make additional measurements after this step, so make sure you have all the data needed.
+	\end{info}
+	\item From the pop-up window, select "Analyze current data file."
+\end{enumerate}
+
+\subsection*{Data Analysis}
+\begin{enumerate}
+	\item Complete the table in the handout. The tidal volume is the peak-to-peak volume measurement of a normal breath cycle. Calculate the Tidal Volume for three different breaths and take an average. Determine IRV, ERV, and VC for one breath
+	\item Calculate the capacities listed in the table in the handout assuming a Residual Volume (RV) of 1 L.
+	\item How would the volume measurements (TV, IRV, and ERV) change if data were collected after vigorous exercise?
+	\item In this lab, equations for vital capacity (VC) were presented. Using the data provided, determine an equation for VC in the following form:\begin{equation}
+		VC = b_0 + b_1x_1 + b_2x_2 + b_3x_3
+	\end{equation}
+	where $b_n$ is a regression parameter, $x_n$ is a variable (such as height). \textit{Hint: use a program that can perform multiple regression.}
+	\item Qualitatively assess your equation. How do the variables (such as height) affect the VC? Is each of the parameters positively or negatively correlated to VC? What do the magnitude and sign of the regression parameters imply?
+\end{enumerate}
+
+\section*{Experiment 2}
+\subsection*{Hardware and Software Setup}
+\begin{enumerate}
+	\item Remove the mouthpiece from the airflow transducer and insert the calibration syringe.
+	\item From the desktop, open BIOPAC Student Lab v3.7 and select L13 - PF II.
+	\item Follow the calibration procedure described in the previous section.
+\end{enumerate}
+
+\subsection*{Test Procedure}
+\begin{info}
+	Keep the airflow transducer upright at all times during the experiment. If you start on an inhale, try to end on an exhale as this increases the accuracy of the airflow to volume calibration. Try not to look at the screen while recording as you may manipulate the results.
+\end{info}
+\begin{enumerate}
+	\item Remove the calibration syringe and replace it with a disposable mouthpiece.
+	\item Attach a nose clip to the subject's nose.
+	\item Breathe normally through the mouthpiece for 20 seconds prior to the start of recording.
+	\item Select "Record FEV" when the subject is ready to start recording.
+	\item The subject must:\begin{enumerate}
+		\item Continue breathing normally for 3 breath cycles.
+		\item After a resting expiration, inhale as deeply as possible.
+		\item Hold their breath for an instant.
+		\item Exhale as quickly and completely as possible.
+	\end{enumerate}
+
+	\item When you have collected your data, click "Stop."
+	\item If the data does not resemble Fig. \ref{example_2}, click "Redo" and try again.
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_7a.jpg}
+	\includegraphics[width=0.6\textwidth]{../images/PF_I_7b.jpg}
+		\caption{Example pulmonary function data}
+		\label{example_2}
+		\end{figure}
+	
+	\item Use the I-beam cursor to select the area of maximal exhale. Start at the exact point where the exhale begins and continue for 3 seconds (use delta T measurements to guarantee at least 3 seconds of data selection).
+	\item Click on "Calculate FEV." This will automatically plot your data to show a cumulative expired volume over time,
+	\item If you need to re-select the measurement area, click "Redo." Otherwise, click "Continue."
+	\item Have the subject reapply nose clip, sit upright, and begin breathing through the airflow transducer.
+	\item Select "Record MVV" when the subject is ready to start recording.
+	\item The subject must:\begin{enumerate}
+		\item Continue breathing normally into the airflow transducer for 5 breath cycles.
+		\item Breath quickly and deeply for 12-15 seconds. Stop early if the subject feels dizzy.
+		\item Breathe normally for 5 more cycles.
+	\end{enumerate}
+	
+	\item Click on "Stop."
+	\item Review the data on the screen. If the data does not resemble that in Fig. \ref{example_3}, click on "Redo." Otherwise, click "Done."
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_8.jpg}
+		\caption{Example pulmonary function data}
+		\label{example_3}
+		\end{figure}
+
+	\item Select Analyze Current or Previous Data File to analyze data from the FEV or the MVV files, respectively. You can also access these files when you first open BIOPAC lessons, by selecting "Review Saved Data" instead of a specific lesson and looking for the folder where you saved your data.
+\end{enumerate}
+
+\subsection*{Data Analysis}
+\begin{enumerate}
+	\item Estimate the Vital Capacity using a p-p measurement.
+	\item Calculate FEV\textsubscript{1}, FEV\textsubscript{2}, NS FEV\textsubscript{3}.
+	\item How do your calculated fractions of air expelled during the three listed time intervals compare with "normal" (average) values?
+	\item Is it possible for a subject to have a vital capacity within normal range, but a value for FEV\textsubscript{1} below normal range? Explain.
+	\item Using the data collected for the Maximal Voluntary Ventilation (MVV) measurements, calculate the respiratory rate (RR) over a 12-second interval. Do so by calculating the number of cycles in the 12-second interval and \textit{not} by highlighting the whole section and selecting Frequency.
+	\item Complete the table in the handout with a measurement for each cycle. Complete only for the 12-second interval used above (the table may have more rows than you need). Calculate the average volume per cycle (AVPC).
+	\item Calculate the MVV using the following formula:\begin{equation}
+		MVV = AVPC \times RR
+	\end{equation}
+	
+	\item Bronchodilator drugs open airways and clear mucous. How would these drugs affect the FEV and MVV measurements?
+	\item MVV decreases with age. Why?
+\end{enumerate}
+
+\end{document}
