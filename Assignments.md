@@ -14,5 +14,5 @@ title: "Assignments"
 | Week 5: Electrocardiography (ECG) I | [Link](prelabs/week_5_ECG_I.pdf) | [Link](inlabs/week_5_ECG_I.pdf) | [Link](inlabs/week_5_ECG_I_assignment.pdf) | [Link](postlabs/week_5_ECG_I.pdf) |
 | Week 6: Electrocardiography (ECG) II | [Link](prelabs/week_6_ECG_II.pdf) | [Link](inlabs/week_6_ECG_II.pdf) | [Link](inlabs/week_6_ECG_II_assignment.pdf) | [Link](postlabs/week_6_ECG_II.pdf) |
 | Week 7: Blood Pressure (BP) | [Link](prelabs/week_7_BP.pdf) | [Link](inlabs/week_7_BP.pdf) | [Link](inlabs/week_7_BP_assignment.pdf) | [Link](postlabs/week_7_BP.pdf), [Data set 1](data/week_7_BP_1.csv), [Data set 2](data/week_7_BP_2.csv) |
-
-### Review paper
+| Week 8: Pulmonary Function (PF) I | [Link](prelabs/week_8_PF_I.pdf) | [Link](inlabs/week_8_PF_I.pdf) | [Link](inlabs/week_8_PF_I_assignment.pdf) | [Link](postlabs/week_8_PF_I.pdf) |
+| Week 9: Pulmonary Function (PF) II | [Link](prelabs/week_9_PF_II.pdf) | [Link](inlabs/week_9_PF_II.pdf) | [Link](inlabs/week_9_PF_II_assignment.pdf) | [Link](postlabs/week_9_PF_II.pdf) |

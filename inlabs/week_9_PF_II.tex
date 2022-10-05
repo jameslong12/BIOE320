@@ -7,6 +7,7 @@
 	urlcolor=cyan,}
 \usepackage{booktabs}
 \usepackage{textgreek}
+\usepackage{gensymb}
 
 \input{../structure.tex} % Include the file specifying the document structure and custom commands
 
@@ -59,157 +60,195 @@ Atmospheric air is a mixture of gases (about 79\% nitrogen and 21\% oxygen, with
 
 In addition to partial pressure gradients, there are several factors that can influence the rate of gas transfer:
 \begin{itemize}
-	\item \textbf{Surface area}: An increase in surface area of the alveolar membrane will result in an increased rate of transfer. Surface area remains fairly constant under resting conditions, but can change with exercise
+	\item \textbf{Surface area}: An increase in surface area of the alveolar membrane will result in an increased rate of transfer. Surface area remains fairly constant under resting conditions, but can change with exercise by increasing the number of pulmonary capillaries open (as a result of changes in cardiac output) and by expanding the alveoli as breathing becomes deeper. Pathological conditions, such as emphysema or lung collapse, can decrease the surface area.
+	\item \textbf{Membrane thickness}: As the barrier separating the air and blood across the alveolar membrane increases, the rate of transfer will decrease. Thickness can increase the pathologic conditions such as pulmonary edema and pulmonary fibrosis.
+	\item \textbf{Diffusion coefficient}: As the diffusion coefficient (solubility of the gas in the membrane) increases, the rate of transfer will increase. The diffusion coefficient for CO\textsubscript{2} is 20 times higher than that of O\textsubscript{2} offsetting the smaller P\textsubscript{CO2} gradient.
 \end{itemize}
 
-\section*{Experiment 1}
+\section*{Experimental Methods}
 \subsection*{Hardware and Software Setup}
 \begin{enumerate}
-	\item Plug the output line from the airflow transducer into channel 1 of the MP3X unit.
-	\item Insert the filter into the inlet opening of the airflow transducer.
-	\item Insert the calibration syringe into the other end of the filter (away from the airflow transducer) as seen in Fig. \ref{xdc}
-		\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_4.jpg}
-		\caption{Transducer setup}
-		\label{xdc}
-		\end{figure}
-		
-	\item Turn the MP3X unit on.
-	\item From the desktop, open BIOPAC student lab 3.7. Selected L12 - PF 1.
+	\item Set up the gas analysis system.\begin{enumerate}
+	\item Connect Gas-System2 to power supply and turn on to allow it to warm up for 5 minutes before calibration.
+	\item Connect AFT7 tubing to the inlet of Gas-System2 (Fig. \ref{inlet}).
+	\end{enumerate}
+	
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_2.jpg}
+	\caption{Inlet of Gas-System2 connected to AFT7 tubing}
+	\label{inlet}
+	\end{figure}
+	
+	\item Assemble airflow accessories and connect them to the gas chamber. Keep in mind that some of these components might already be assembled (Fig. \ref{airflow}).\begin{enumerate}
+	\item Attach your disposable bacteriological filter (AFT1) to inlet side of the airflow transducer (SS11LA).
+	\item Connect AFT22 T-valve to opposite side of airflow transducer. Check that the arrows indicating airflow are pointing away from the airflow transducer.
+	\item Connect AFT11C couplers to remaining two ports of T-valve.
+	\item Use AFT11E (blue coupler) to connect AFT7 tubing to T-valve in the port opposite of SS11LA connection.
+	\item Attach AFT6 calibration syringe to remaining port of T-valve.
+	\end{enumerate}
+	
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_3.jpg}
+	\caption{Schematic of airflow accessories connected to Gas-System2}
+	\label{airflow}
+	\end{figure}
+	
+	\item Connect SS11LA airflow transducer to channel 1.
+	\item Connect O\textsubscript{2} output from Gas-System2 to channel 2.
+	\item Connect CO\textsubscript{2} output from Gas-System2 to channel 3.
+	\item Turn on MP3X.
 \end{enumerate}
 
 \subsection*{Calibration}
 \begin{enumerate}
-	\item Make sure to always handle this setup by holding the syringe, rather than the handle of the airflow transducer. This will ensure that the equipment remains properly aligned.
-	\item Pull the syringe handle all the way out.
-	\item Read the instructions below, then click the "Calibrate" button located int he upper left corner of the Setup window.
-	\item During this recording, simply hold the assembly still and upright. Recording will end after 8 seconds and your screen should display a straight line.
-	\item During this next part, you will push the syringe plunger in and out for a total of 5 cycles (push in and pull out for a total of 10 strokes). Pace yourself and try to achieve slow, smooth movement. Rest for a short time in between each plunge.
-	\item Hold the syringe horizontally in one hand and use the other hand to plunge in and out completely.
-	\item When you are ready to begin, click "OK" to start the calibration.
-	\item When you finish calibrating, click "End Calibration." Your screen should resemble Fig. \ref{calibration}.
-		\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_5.jpg}
-		\caption{Calibration procedure - plunge cycles}
-		\label{calibration}
-		\end{figure}
+	\item Open file H19rer.gtl, which can be downloaded from the course website.
+	\item Pump calibration syring 15-20 times to flush Gas-System2 chamber with ambient air.
+	\item Change acquisition length (Fig. \ref{calibration}).\begin{enumerate}
+	\item Select MP3X from the menu at the top of the screen.
+	\item Choose Setup Acquisition.
+	\item Enter 100 samples/second under sample rate.
+	\item Change the acquisition length to 60 minutes.
+	\end{enumerate}
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_4.jpg}
+	\caption{Set up acquisition window}
+	\label{calibration}
+	\end{figure}
 	
-	\item If your calibration looks incorrect, click "Redo" and repeat the procedure.
+	\item Select MP3X from the menu bar, then select Setup Channels. Click the checkboxes such that it mirrors Fig. \ref{calibration2}.
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_5.jpg}
+	\caption{Setup Channels window for MP3X}
+	\label{calibration2}
+	\end{figure}
+	
+	\item Calibrate airflow (channel 1).\begin{enumerate}
+	\item Click on wrench icon for channel 1.
+	\item Click on the Scaling button to arrive to Change Scaling Parameters.
+	\item Hold airflow transducer still and upright and press Cal1 button.
+	\item Subtract 3000 from Cal1 value and enter as Cal2 input value field.
+	\item Check Cal1 scale value is zero and Cal2 value is 10.
+	\item Click OK twice to return to Setup Channels window.
+	\end{enumerate}
+	
+	\item Calibrate O\textsubscript{2} (channel 2).
+	\begin{enumerate}
+		\item Click on wrench icon for channel 2.
+		\item Click on Scaling button.
+		\item Click on Cal2 button.
+		\item Enter value 20.93 as Cal2 scale value.
+		\item Confirm that both Cal1 input value and Cal1 scale value are zero.
+		\item Click OK twice to return to Setup Channels window.
+	\end{enumerate}
+	
+	\item Calibration CO\textsubscript{2} (channel 3).
+	\begin{enumerate}
+		\item Click on wrench icon for channel 3.
+		\item Click on Scaling button.
+		\item Click on Cal1 button.
+		\item Enter value 0.04 as Cal1 scale value field.
+		\item Add 10 to Cal1 input value and enter as Cal2 input value.
+		\item Check Cal2 scale value is 1.04.
+		\item Click OK twice to return to Setup Channels window.
+	\end{enumerate}
+	
+	\item Calibrate for gas normalization.
+	\begin{enumerate}
+		\item Click on wrench icon for C3 Vis (STPD).
+		\item Update the formula to read C2*(898). This is the normalization factor for gas at an assumed 72\degree F.
+		\item Click OK to return to Setup Chanels window.
+		\item When done calibrating channels, press OK to return to principal window.
+	\end{enumerate}
 \end{enumerate}
 
 \subsection*{Test Procedure}
-\begin{info}
-	Keep the airflow transducer upright at all times during the experiment. If you start on an inhale, try to end on an exhale as this increases the accuracy of the airflow to volume calculation. Try not to look at the screen while recording as you may manipulate the results.
-\end{info}
+\subsubsection*{General Guidelines}
 \begin{enumerate}
-	\item Remove the calibration syringe and replace it with a disposable mouthpiece.
-	\item Attach the nose clip to the subject's nose.
-	\item Breathe normally through the mouthpiece for 20 seconds prior to the start of recording.
-	\item Select "Record" when the subject is ready (Begin recording on an inhale).
-	\item The subject must:\begin{enumerate}
-		\item Continue breathing normally for 5 breath cycles.
-		\item After a resting expiration, inhale as deeply as possible.
-		\item Exhale to the point of normal resting expiration and continue breathing normally for 3-5 breaths.
-		\item After a resting inspiration, maximally exhale (as completely as possible).
-		\item Breathe normally for 5 breath cycles.
-	\end{enumerate}
-	
-	\item When you are done recording, click on "Stop."
-	\item If the data resembles Fig. \ref{example}, click "Done." Otherwise, click "Redo" and try again.
-	
-		\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_6.jpg}
-		\caption{Example pulmonary function data}
-		\label{example}
-		\end{figure}
-	
-	\begin{info}
-		You will not be able to make additional measurements after this step, so make sure you have all the data needed.
-	\end{info}
-	\item From the pop-up window, select "Analyze current data file."
+	\item Before every trial, pump calibration syringe 15-20 times to flush the mixing chamber with ambient air.
+	\item While recording, hold airflow apparatus very still parallel to floor. Make sure to keep the airflow transducer handle perpendicular to floor.
+	\item Begin every recording with inhalation and end with exhalation. This will prevent receiving O\textsubscript{2} inspiration values less that that of total expiration.
+	\item Record for a few second without breathing at the beginning of each experiment to ensure that the baselines are correct. Hit the vertical autoscale button, as needed, to confirm the magnitude of the baseline traces. If baseline values are not correct, stop and troubleshoot.
+	\item Replace calibration syringe with AFT1 filter and AFT2 mouthpiece (Fig. \ref{syringe}).
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_8.jpg}
+	\caption{Schematic of airflow accessories with AFT1 filter and AFT2 mouthpiece}
+	\label{syringe}
+	\end{figure}
 \end{enumerate}
 
-\subsection*{Data Analysis}
-\begin{enumerate}
-	\item Complete the table in the handout. The tidal volume is the peak-to-peak volume measurement of a normal breath cycle. Calculate the Tidal Volume for three different breaths and take an average. Determine IRV, ERV, and VC for one breath
-	\item Calculate the capacities listed in the table in the handout assuming a Residual Volume (RV) of 1 L.
-	\item How would the volume measurements (TV, IRV, and ERV) change if data were collected after vigorous exercise?
-	\item In this lab, equations for vital capacity (VC) were presented. Using the data provided, determine an equation for VC in the following form:\begin{equation}
-		VC = b_0 + b_1x_1 + b_2x_2 + b_3x_3
-	\end{equation}
-	where $b_n$ is a regression parameter, $x_n$ is a variable (such as height). \textit{Hint: use a program that can perform multiple regression.}
-	\item Qualitatively assess your equation. How do the variables (such as height) affect the VC? Is each of the parameters positively or negatively correlated to VC? What do the magnitude and sign of the regression parameters imply?
-\end{enumerate}
+The output from the BIOPAC Pro Software is summarized in Table \ref{abbreviation}.
 
-\section*{Experiment 2}
-\subsection*{Hardware and Software Setup}
-\begin{enumerate}
-	\item Remove the mouthpiece from the airflow transducer and insert the calibration syringe.
-	\item From the desktop, open BIOPAC Student Lab v3.7 and select L13 - PF II.
-	\item Follow the calibration procedure described in the previous section.
-\end{enumerate}
+\begin{table}[h]
+	\centering
+	\caption{BIOPAC Pro Software output}
+	\begin{tabular}[h!]{p{0.5\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}}
+	\toprule
+	Output & Abbreviation & Units\\
+	\midrule
+	Airflow through the pneumotachometer & Airflow & [L/sec]\\
+	O\textsubscript{2} concentration in the mixing chamber & O2E (expired) & [volume \%]\\
+	CO\textsubscript{2} concentration in the mixing chamber & CO2E (expired) & [volume \%]\\
+	Volume of O\textsubscript{2} consumed at STP per 60 sec interval & VO2* & [L/min]\\
+	Respiratory Exchange Ratio & RER & [-]\\
+	\bottomrule
+	\end{tabular}
+	\label{abbreviation}
+	\end{table}
 
 \subsection*{Test Procedure}
-\begin{info}
-	Keep the airflow transducer upright at all times during the experiment. If you start on an inhale, try to end on an exhale as this increases the accuracy of the airflow to volume calibration. Try not to look at the screen while recording as you may manipulate the results.
-\end{info}
+\subsubsection*{Normal Breathing}
 \begin{enumerate}
-	\item Remove the calibration syringe and replace it with a disposable mouthpiece.
-	\item Attach a nose clip to the subject's nose.
-	\item Breathe normally through the mouthpiece for 20 seconds prior to the start of recording.
-	\item Select "Record FEV" when the subject is ready to start recording.
-	\item The subject must:\begin{enumerate}
-		\item Continue breathing normally for 3 breath cycles.
-		\item After a resting expiration, inhale as deeply as possible.
-		\item Hold their breath for an instant.
-		\item Exhale as quickly and completely as possible.
-	\end{enumerate}
-
-	\item When you have collected your data, click "Stop."
-	\item If the data does not resemble Fig. \ref{example_2}, click "Redo" and try again.
-	\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_7a.jpg}
-	\includegraphics[width=0.6\textwidth]{../images/PF_I_7b.jpg}
-		\caption{Example pulmonary function data}
-		\label{example_2}
-		\end{figure}
-	
-	\item Use the I-beam cursor to select the area of maximal exhale. Start at the exact point where the exhale begins and continue for 3 seconds (use delta T measurements to guarantee at least 3 seconds of data selection).
-	\item Click on "Calculate FEV." This will automatically plot your data to show a cumulative expired volume over time,
-	\item If you need to re-select the measurement area, click "Redo." Otherwise, click "Continue."
-	\item Have the subject reapply nose clip, sit upright, and begin breathing through the airflow transducer.
-	\item Select "Record MVV" when the subject is ready to start recording.
-	\item The subject must:\begin{enumerate}
-		\item Continue breathing normally into the airflow transducer for 5 breath cycles.
-		\item Breath quickly and deeply for 12-15 seconds. Stop early if the subject feels dizzy.
-		\item Breathe normally for 5 more cycles.
-	\end{enumerate}
-	
-	\item Click on "Stop."
-	\item Review the data on the screen. If the data does not resemble that in Fig. \ref{example_3}, click on "Redo." Otherwise, click "Done."
-	\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/PF_I_8.jpg}
-		\caption{Example pulmonary function data}
-		\label{example_3}
-		\end{figure}
-
-	\item Select Analyze Current or Previous Data File to analyze data from the FEV or the MVV files, respectively. You can also access these files when you first open BIOPAC lessons, by selecting "Review Saved Data" instead of a specific lesson and looking for the folder where you saved your data.
+	\item Have the subject put a nose clip on.
+	\item Press Start button in the lower right corner of the Pro Software.
+	\item Record for a few seconds without breathing to ensure the baselines are correct.
+	\item Have the subject breathe normally in and out of the mouthpiece for at least 2 minutes. This ensures that mixing occurs and that the tank fills completely with exhaled air.
+	\item Press the Stop button in the Pro Software and save your data.
 \end{enumerate}
 
-\subsection*{Data Analysis}
+\subsubsection*{Hyperventilation}
 \begin{enumerate}
-	\item Estimate the Vital Capacity using a p-p measurement.
-	\item Calculate FEV\textsubscript{1}, FEV\textsubscript{2}, NS FEV\textsubscript{3}.
-	\item How do your calculated fractions of air expelled during the three listed time intervals compare with "normal" (average) values?
-	\item Is it possible for a subject to have a vital capacity within normal range, but a value for FEV\textsubscript{1} below normal range? Explain.
-	\item Using the data collected for the Maximal Voluntary Ventilation (MVV) measurements, calculate the respiratory rate (RR) over a 12-second interval. Do so by calculating the number of cycles in the 12-second interval and \textit{not} by highlighting the whole section and selecting Frequency.
-	\item Complete the table in the handout with a measurement for each cycle. Complete only for the 12-second interval used above (the table may have more rows than you need). Calculate the average volume per cycle (AVPC).
-	\item Calculate the MVV using the following formula:\begin{equation}
-		MVV = AVPC \times RR
-	\end{equation}
-	
-	\item Bronchodilator drugs open airways and clear mucous. How would these drugs affect the FEV and MVV measurements?
-	\item MVV decreases with age. Why?
+	\item Have the subject put a nose clip on.
+	\item Press Start button in lower right corner of the Pro Software.
+	\item Record for a few seconds without breathing to ensure the baselines are correct.
+	\item Have the subject breathe normally for 1 minute.
+	\item Have the subject hyperventilate for 1 minute.
+	\item Resume normal breathing for 1 minute.
+	\item Press the Stop button in the Pro Software and save your data.
 \end{enumerate}
 
+\subsubsection*{Recovery from Exercise}
+\begin{enumerate}
+	\item Perform the exercise of your choice that gets your heart rate up.
+	\item Following exercise, immediately attach nose clip.
+	\item Press Start button in lower right corner of the Pro Software.
+	\item Record for a few seconds without breathing to ensure the baselines are correct.
+	\item Breathe in an out of the mouthpiece for at least 2 minutes.
+	\item Press the Stop button in the Pro Software and save your data.
+\end{enumerate}
+
+\section*{Data Analysis}
+
+Use the following values, if necessary:\begin{itemize}
+	\item Ambient air composition by volume: 20.93\% O\textsubscript{2}, 0.04\% CO\textsubscript{2}, 79.03\% N\textsubscript{2}
+	\item Vapor pressure of water is 22.4 mmHg and 75\degree F and 47.07 mmHg at 98.6\degree F
+\end{itemize}
+
+\begin{enumerate}
+	\item Complete the chart for O\textsubscript{2} \%, CO\textsubscript{2} \%, and VO\textsubscript{2} over the three test conditions.
+	\item Complete the chart for molar concentrations of O\textsubscript{2} over the listed conditions.
+	\item Compare and explain the results. Focus on comparisons between A \& B, B \& C, D \& E, and B \& E.
+	\item For each of the three test conditions, determine the mean measured breathing or respiratory rate and the tidal volume. \textit{Hint}: obtain tidal volume from the airflow trace.
+	\item Explain your method for determining the breathing rate and the tidal volume.
+	\item Based on your data, how many moles of O\textsubscript{2} are consumed per breath for normal breathing? How many moles of CO\textsubscript{2} are produced per breath for normal breathing? The volume of the mixing chamber is 5 L. Record these numbers for the post-lab.
+	\item Calculate the pulmonary ventilation rate for each of the three conditions through the following steps:\begin{enumerate}
+	\item Calculate the minute respiratory rate (total pulmonary ventilation rate) and record in the chart below. Explain how you performed the calculation.
+	\item Compare and briefly explain differences in minute respiratory rate among the test conditions.
+	\item Calculate the alveolar ventilation rate and record in the chart below. Assume a dead space volume of 150 mL/breath. Explain how you performed the calculation.
+	\item Compare and briefly explain differences in alveolar ventilation rate among the test conditions. Use the dead space of 150 mL to fill in the table.
+	\item Which of the two ventilation rates is a more accurate indicator of the efficiency of actual breathing/ventilation? Explain.
+	\end{enumerate}
+	
+	\item The rate of oxygen consumption is equal to the rate of oxygen diffusion across the respiratory membrane. Determine the rate of oxygen consumption for the normal and exercise conditions based on your experimental data.
+	\item How do the measured O\textsubscript{2} consumption rates at rest and after exercise compare?
+\end{enumerate}
 \end{document}
