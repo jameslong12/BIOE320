@@ -41,14 +41,11 @@ The lab is based on the BIOPAC Student Lab System that allows data acquisition a
 \label{basic_scheme}
 \end{figure}
 
-The lab will introduce you to the BIOPAC system. To complete the in-lab activities, read the instructions carefully and perform each of the steps described in the exercises while answering the questions listed below. 
-
-\begin{info}
-	Your knowledge and comfort level in manipulating the data obtained using BIOPAC are critical for success in future labs.
-\end{info}
+The lab will introduce you to the BIOPAC system. To complete the in-lab activities, read the instructions carefully and perform each of the steps described in the exercises while answering the questions listed below. Your knowledge and comfort level in manipulating the data obtained using BIOPAC are critical for success in future labs.
 
 \section*{Getting Started}
 \begin{enumerate}
+	\item From the course website, navigate to \textit{Assignments} and download \textit{SampleData-L07} listed in the week 1 row. Save this file on the Desktop.
 	\item Turn on the MP3X acquisition unit by flipping the switch found on the back panel.
 		\begin{figure}[h]
 		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_2a.jpg}
@@ -58,78 +55,49 @@ The lab will introduce you to the BIOPAC system. To complete the in-lab activiti
 		\label{panels}
 		\end{figure}
 		
-	\item Launch the BIOPAC Student Lab Lessons Software (\textit{Start $\rightarrow$ All Programs $\rightarrow$ BIOPAC Student Lab Lessons 3.7.6} it's actually 4.1 from the desktip)
-	\item Desktop to Biopac Student Lab 4.1 to Record or Analyze a BIOPAC lesson to Choose a lesson to BSL lessons to L07 (or otherwise)
-	
-	\begin{warn}
-		If you receive the warning prompt shown in Fig. \ref{conn_error}, make sure the acquisition box is on, check the connections to the computer, and restart the hardware and software. If the problem persists, call the instructor or a TA.
-	\end{warn}
+	\item Launch the BIOPAC Student Lab Lessons Software (\textit{Start $\rightarrow$ BIOPAC Systems, Inc $\rightarrow$ BIOPAC Student Lab 4.1})
+	\item In the \textit{Choose a Lesson} menu, select \textit{Review Saved Data}. Navigate to the Desktop and select \textit{SampleData-L07}. A window resembling Fig. \ref{open_data} (right) should appear.
 	
 		\begin{figure}[h]
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_3.jpg}
-		\centering
-		\caption{Connection error prompt}
-		\label{conn_error}
-		\end{figure}
-		
-	\item Scroll down the lesson menu to "Review Saved Data," select it, and click OK. A window resembling Fig. \ref{open_data} (left) should appear.
-	
-		\begin{figure}[h]
-		\includegraphics[width=0.4\textwidth]{../images/BIOPAC_4a.jpg}
-		\includegraphics[width=0.4\textwidth]{../images/BIOPAC_4b.jpg}
-		\centering
-		\caption{Opening data files}
-		\label{open_data}
-		\end{figure}
-	
-	\item If the default folder does not come up, navigate to \textit{'C:\textbackslash Program Files\textbackslash BIOPAC Systems, Inc.\textbackslash BIOPAC Student Lab 3.7\textbackslash BSL Lessons 3.7.6\textbackslash Data Files\textbackslash Sample Data\textbackslash SampleData-L07'}
-	\item Select and open the "Sample Data" folder. A window resembling Fig. \ref{open_data} (right) should appear.
-	\item Open "SampleData-L07".
-	\item The monitor screen should display a data window showing ECG (top waveform) and Pulse (bottom waveform) data (Fig. \ref{sample_data})
-	
-		\begin{figure}[h]
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_5a.jpg}
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_5b.jpg}
+		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_21.png}
 		\centering
 		\caption{L07 data file}
 		\label{sample_data}
 		\end{figure}
-	
 \end{enumerate}
 
 \section*{Data Viewing Tools}
 \begin{enumerate}
 	\item The software consists of 2 main sections: data window (area with graphs) and journal window (area with text notes). Make sure you can find these on your computer.
-	\item In this sample data, the data window contains two series of simultaneously recorded waveforms: an electrocardiogram (ECG) and a pulse. These waveforms depend on the physiological parameter measured and will change depending on the lesson recorded.
-	\item Select the different markers (found above the marker bar in blue diamonds) and note from the markers what experiments were performed with this data set.
-	\item Turn on and off channel 1 (ECG) and channel 40 (pulse). Remember that the channel boxes (found above the marker bar on the left) allow you to display or hide channels from view in order to concentrate or print out only the desired waveforms. The disabled channel will be hidden from. view, but can be turned back on at any time.
+	\item In this sample data, the data window contains two series of simultaneously recorded waveforms: an electrocardiogram (ECG, shown in red) and a pulse (shown in blue). These waveforms depend on the physiological parameter measured and will change depending on the lesson recorded.
+	\item Select the different markers (found above the marker bar in upside down triangles) and note from the markers what experiments were performed with this data set.
+	\item Toggle between channel 1 (ECG) and channel 40 (pulse). Remember that the channel boxes (found above the marker bar on the left) allow you to select different channels in order to concentrate on the desired waveforms.
 \end{enumerate}
 
-\section*{Data Analysis Tools: Selection, I-beam, and Zoom Tools (\includegraphics[width=0.08\textwidth]{../images/BIOPAC_selection.jpg})}
+\section*{Data Analysis Tools: Selection, I-beam, and Zoom Tools}
 \begin{enumerate}
-	\item Use the selection tool (arrow) to better select the section from 3 to 40 seconds: left click on the x-axis (seconds) to open the prompt seen in Fig. \ref{change_horiz} and hcange the scale range to display the desired data section.
+	\item Use the selection tool (arrow, located in the top right) to better select the section from 3 to 40 seconds: left click on the x-axis (seconds) to open the prompt seen in Fig. \ref{change_horiz} and change the scale range to display the desired data section.
 	
 		\begin{figure}[h]
-		\includegraphics[width=0.6\textwidth]{../images/BIOPAC_8.jpg}
+		\includegraphics[width=0.6\textwidth]{../images/BIOPAC_19.png}
 		\centering
 		\caption{Changing the display for the horizontal scale}
 		\label{change_horiz}
 		\end{figure}
 		
-	\item Use the I-beam tool (looks like an I) to highlight different sections of the data. Notice that the measurement boxes (Delta T, BPM, P-P) will always display information corresponding to the highlighted region.
-	\item Use the zoom tool (magnifying glass) to select an area of the data to be enlarged so as to make some analyses easier to perform. Use the zoom tool to display the waveform at approximately 12.6 seconds. Hold down the mouse button and drag the cursor downward and to the right so that the selected area includes approximately six spikes (see Fig. \ref{select_cycles}).
+	\item Use the I-beam tool (looks like an I) to highlight different sections of the data. This feature will be expanded upon in the next section.
+	\item Use the zoom tool (magnifying glass) to select an area of the data to be enlarged so as to make some analyses easier to perform. Hold down the mouse button and drag the cursor downward and to the right so that the selected area includes approximately six spikes (see Fig. \ref{select_cycles}).
 	
 		\begin{figure}[h]
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_9.jpg}
+		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_22.png}
 		\centering
 		\caption{Selecting 6 cycles using the zoom tool}
 		\label{select_cycles}
 		\end{figure}
 		
-	\item Release the mouse button. Your data should not look like Fig. \ref{selected_cycles}. If you selected the wrong part of the data to magnify, pull down the Display menu and choose "Zoom Previous", then try again.
-	
+	\item Release the mouse button. Your data should look like Fig. \ref{selected_cycles}.
 		\begin{figure}[h]
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_10.jpg}
+		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_23.png}
 		\centering
 		\caption{Selected region using zoom tool}
 		\label{selected_cycles}
@@ -138,23 +106,27 @@ The lab will introduce you to the BIOPAC system. To complete the in-lab activiti
 
 \section*{Channel Measurement Box}
 \begin{enumerate}
-	\item Right above the ECG recording channel, you will find the measurement boxes (Delta T, BPM, P-P). The first box indicates the \textit{recording channel} selected, the second box indicates the \textit{function or measurement} to be taken, and the third box contains the \textit{measurement value} (see Fig. \ref{meas_box}).
+	\item Right above the ECG recording channel, you will find the measurement boxes (series of boxes currently listing \textit{None}). The first box indicates the recording channel selected, the second box indicates the function or measurement to be taken, and the third box contains the measurement value (Fig. \ref{meas_box}).
 	
 		\begin{figure}[h]
-		\includegraphics[width=0.4\textwidth]{../images/BIOPAC_16.jpg}
+		\includegraphics[width=0.4\textwidth]{../images/BIOPAC_20.png}
 		\centering
 		\caption{Channel measurement boxes}
 		\label{meas_box}
 		\end{figure}
-		
+	\item Set up the following measurement boxes:\begin{itemize}
+		\item Channel 1: Delta T
+		\item Channel 1: BPM
+		\item Channel 1: Max
+		\item Channel 1: Min
+	\end{itemize}
 	\item Using the first cycle (first beat), answer the following questions:
 		\begin{enumerate}
-			\item What is your measured value for delta T?
-			\item What does delta T represent?
+			\item What is your measured value for Delta T?
+			\item What does Delta T represent?
 			\item What is your measured value for BPM?
 			\item What does BPM represent?
 			\item What are the "max" and "min" for the waveform on ECG?
-			\item What are the "max" and "min" for the waveform on Pulse?
 			\item What do the "max" and "min" values represent?
 			\item Try out the options for "area", "P-P", "integral", "stdev", and two additional ones (see Table \ref{table_defs} at the end of this protocol for available options and explanations). Describe a physiological example when each of these measurements may be useful.
 		\end{enumerate}
@@ -165,46 +137,23 @@ The lab will introduce you to the BIOPAC system. To complete the in-lab activiti
 	\item These buttons allow you to toggle the display style between an oscilloscope and a chart recorder (see Fig. \ref{overlap_split})
 	
 		\begin{figure}[h]
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_11a.jpg}
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_11b.jpg}
+		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_23.png}
+		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_24.png}
 		\centering
 		\caption{Display types: split (top) and overlap (bottom)}
 		\label{overlap_split}
 		\end{figure}
 	
-	\item Click the overlap buttom to activate the type of display. Once the signals are overlapped, try to move each signal up and down separately for alignment.
-		\begin{info}
-			Select the channel box to select the appropriate channel to adjust.
-		\end{info}
-		
+	\item Click the overlap button to activate the type of display. Once the signals are overlapped, try to move each signal up and down separately for alignment, using the scroll bar on the right. Select the channel box to select the appropriate channel to adjust.
 	\item Return the display type to split.
 \end{enumerate}
 
 \section*{Markers}
 Markers are used to reference important events (and their associated locations) in the data. There are two types of markers:
 \begin{itemize}
-	\item \includegraphics[width=0.05\textwidth]{../images/BIOPAC_append_marker.jpg} \textit{Append markers}: These appear as a diamond above the marker text box and are blue when active. Append markers are automatically inserted when you begin each new recording segment and are marked with time data. Markers can also be manually entered during recording by pressing F9.
+	\item \textbf{Append markers}: These appear as a diamond above the marker text box and are blue when active. Append markers are automatically inserted when you begin each new recording segment and are marked with time data. Markers can also be manually entered during recording by pressing F9.
 	
-	\item \includegraphics[width=0.05\textwidth]{../images/BIOPAC_event_marker.jpg} \textit{Event markers}: These appear as inverted triangles below the marker text region and are yellow when active. You may add markers to your data after it has been recorded simply by clicking within the marker region using the selection tool. This new marker will then become the current active marker, and you may type in the marker text box.
-\end{itemize}
-
-\begin{figure}[h]
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_12.jpg}
-		\centering
-		\caption{Marker tools are located in the top right, indicated by the arrows}
-		\label{marker_tools}
-		\end{figure}
-
-Using the marker tools on the right edge of the marker region (Fig. \ref{marker_tools}), you may:
-\begin{itemize}
-	\item Change the active marker using the left and right pointing arrows
-	\item Choose from the pop-up menu to find, clear, show, or import to journal certain or all markers (Fig. \ref{marker_menu}).
-		\begin{figure}[h]
-		\includegraphics[width=0.6\textwidth]{../images/BIOPAC_13.jpg}
-		\centering
-		\caption{Marker tools pop-up menu}
-		\label{marker_menu}
-		\end{figure}
+	\item \textbf{Event markers}: These appear as inverted triangles below the marker text region and are yellow when active. You may add markers to your data after it has been recorded simply by clicking within the marker region using the selection tool. This new marker will then become the current active marker, and you may type in the marker text box.
 \end{itemize}
 
 \begin{enumerate}
@@ -214,34 +163,19 @@ Using the marker tools on the right edge of the marker region (Fig. \ref{marker_
 \end{enumerate}
 
 \section*{Journal}
-The Review Saved Data mode incorporates a Journal feature so you can type notes or copy measurements from previously saved data. You can also copy data directly to the Journal. The Journal needs to be the active window for its options to appear.
+The \textit{Review Saved Data} mode incorporates a Journal feature so you can type notes or copy measurements from previously saved data. You can also copy data directly to the Journal. The Journal needs to be the active window for its options to appear.
 \begin{enumerate}
-	\item Access the Option menu (Fig. \ref{journal}) by selecting \textit{Journal Preferences} from the \textit{File} menu. This window will allow you to control formatting for text, measurements, and wave data.
-		\begin{figure}[h]
-		\includegraphics[width=0.6\textwidth]{../images/BIOPAC_14.jpg}
-		\centering
-		\caption{Journal preferences}
-		\label{journal}
-		\end{figure}
-
 	\item To paste a pop-up measurement into the Journal:
 		\begin{enumerate}
 			\item Select the channel you want to measure by clicking on it with the Selection tool or use the cursor to pick the correct channel number in the boxes to the left of the pop-up measurements.
 			\item Choose the appropriate pop-up measurement (e.g. Max, Min).
 			\item Use the I-beam tool to select the portion of the wave you are interested in. The pop-up measurement values will update instantly based on the selected area you have chosen with the I-beam tool.
-			\item Pull down the Edit menu and select Journal $\rightarrow$ Paste Measurement. Alternatively, you can use Ctrl+M.
+			\item Pull down the \textit{Edit} menu and select \textit{Journal $\rightarrow$ Paste Measurements}. 
 		\end{enumerate}
 	\end{enumerate}
 
 \section*{Practice}
-	\begin{figure}[h]
-		\includegraphics[width=0.8\textwidth]{../images/BIOPAC_15.jpg}
-		\centering
-		\caption{Practice data}
-		\label{practice}
-		\end{figure}
-	
-Using the data provided (Sample Data-L07), display the waveforms contained between 0.2 and 4.4 seconds (Fig. \ref{practice}). Answer the following questions for the pulse data:
+Using the sample data, display the waveforms contained between 0.2 and 4.4 seconds. Answer the following questions for the pulse data:
 		\begin{enumerate}
 			\item Maximum values of:
 				\begin{enumerate}
@@ -266,7 +200,11 @@ Using the data provided (Sample Data-L07), display the waveforms contained betwe
 			\item You have lost track of where you are in the data due to zooming, scrolling, etc. List 2 sequential steps you can take to make sure the complete data file is on the screen.
 		\end{enumerate}
 \section*{Preparation for Post-Lab}
-Save data from the file you used today (at least 15-20 seconds) as a journal file. Make sure you have data for both channels and email it to yourself.
+\begin{enumerate}
+	\item Select at least 15-20 seconds of data using the I-beam tool.
+	\item Copy the data to the clipboard by going to \textit{Edit $\rightarrow$ Data Window $\rightarrow$ Copy Wave Data}.
+	\item Paste these values in a text editor or other software of your choice. Make sure you have data for both channels and email it to yourself.
+\end{enumerate} 
 
 \pagebreak
 \begin{table}[h!]
