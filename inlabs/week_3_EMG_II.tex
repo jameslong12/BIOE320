@@ -25,12 +25,12 @@
 
 \section*{Objectives}
 \begin{enumerate}
-	\item To measure reflex time of different nerves in the body under different conditions using the reflex hammer
+	\item To measure knee reflex time under different conditions using the reflex hammer
 	\item To compare and correlate magnitude of hammer strike to magnitude of response via EMG activity
 \end{enumerate}
 
 \section*{Background}
-Skeletal muscle control is important for most of our daily activities, from maintaining body posture to performing activities that require more precise movements. To appropriately perform muscle activities, your central nervous system needs to know the initial position of your body and the progression of movements so that adjustments can be made as needed. This information, known as proprioceptive input, can be acquired from your brain through different receptors in your eyes, joints, vestibular apparatus, skin, and muscles themselves. There are two types of muscle receptors tasked with monitoring changes in muscle length (\textit{muscle spindles} or muscle tension (\textit{Golgi tendon organs}). In this lab, we will focus on the function of muscle spindles and their importance in spinal cord reflexes.\\
+Skeletal muscle control is important for most of our daily activities, from maintaining body posture to performing activities that require more precise movements. To appropriately perform muscle activities, your central nervous system needs to know the initial position of your body and the progression of movements so that adjustments can be made as needed. This information, known as proprioceptive input, can be acquired from your brain through different receptors in your eyes, joints, vestibular apparatus, skin, and muscles themselves. There are two types of muscle receptors tasked with monitoring changes in muscle length (\textbf{muscle spindles}) or muscle tension (\textbf{Golgi tendon organs}). In this lab, we will focus on the function of muscle spindles and their importance in spinal cord reflexes.\\
 
 Muscle spindles, which are distributed throughout the fleshy part of skeletal muscles, send information to the nervous system about length or rate of change of length of a muscle. Each muscle spindle has its own afferent nerve supply and efferent nerve supply. The former carries signals from the sensory receptor to the spinal cord, while the latter carries outgoing signals from the spinal cord to the effector organ.\\
 
@@ -43,19 +43,17 @@ Efferent or motor nerves can be divided into alpha motor neurons, which innervat
 \label{spindle}
 \end{figure}
 
-When the muscle is passively stretch, the muscle spindles are also stretched, causing an increase in the rate of firing of the afferent nerve fibers. The afferent neuron directly synapses on the alpha motor neuron that innervates the extrafusal fibers of the same muscle, and therefore causes the muscle to contract (Fig. \ref{spindle}). This mechanism serves as a local negative feedback system that resists passive changes in muscle length so that the optimal resting length can be maintained.\\
+When the muscle is passively stretched, the muscle spindles are also stretched, causing an increase in the rate of firing of the afferent nerve fibers. The afferent neuron directly synapses on the alpha motor neuron that innervates the extrafusal fibers of the same muscle, and therefore causes the muscle to contract (Fig. \ref{spindle}). This mechanism serves as a local negative feedback system that resists passive changes in muscle length so that the optimal resting length can be maintained.\\
 
 Spinal cord reflexes represent the most basic of motor responses. These reflexes are carried out entirely within the spinal cord and are modified by inputs from higher brain centers to generate complex movements. The myotatic, or muscle stretch reflex, is an example of a spinal reflex. When the tendon is hit, the muscle and associated spindle are stretched, causing an increase in the firing rate (action potential spike frequency) of the sensory afferent neuron. This signal is relayed through the spinal cord back to the alpha motor neuron that causes the outlying muscle to contract (reflex response). A monosynaptic stretch reflex depends on three factors:
 
 \begin{enumerate}
-	\item \textit{Reflex arc length}: distance that the signal travels from the muscle spindle to the spinal cord region where it synapses with the motor nerve and back (i.e. sensory nerve plus motor nerve path)
-	\item \textit{Nerve conduction velocity}
-	\item \textit{Synaptic transmission time}
+	\item \textbf{Reflex arc length}: distance that the signal travels from the muscle spindle to the spinal cord region where it synapses with the motor nerve and back (i.e. sensory nerve plus motor nerve path)
+	\item \textbf{Nerve conduction velocity}
+	\item \textbf{Synaptic transmission time}
 \end{enumerate}
 
-The \textit{knee jerk reflex} is a spinal reflex activated by tapping the patellar tendon below the kneecap. This tendon then stretches the muscle spindles, generating sensory impulse to the spinal cord. Alpha motor neurons in the spinal cord cause a brief, rapid contraction of the quadriceps femoris, which causes the leg to extend.\\
-
-The \textit{ankle reflex} is activated by tapping the Achilles tendon behind the ankle and just above the heel. This causes plantar flexion of the foot; this response causes contraction of a similar muscle group to the one activated when walking tip-toed or standing on your toes.\\
+The \textbf{knee jerk reflex} is a spinal reflex activated by tapping the patellar tendon below the kneecap. This tendon then stretches the muscle spindles, generating sensory impulse to the spinal cord. Alpha motor neurons in the spinal cord cause a brief, rapid contraction of the quadriceps femoris, which causes the leg to extend.\\
 
 \begin{figure}[h]
 \centering
@@ -77,13 +75,10 @@ This entire system can be generalized as a control system in which a regulated v
 	\item What happens to the regulated output variable if it is higher than the set point? What if it is lower?
 \end{enumerate}
 
-\section*{Setting Up the Software}
+\section*{Experimental Methods}
+\subsection*{Setting Up the Software}
 \begin{enumerate}
-	\item (TA only) If using a silver hammer, make sure that the reflex hammer is inserted into the black transducer (cube shape), which was sent with the stethoscope. Make sure the transducer is firmly attached to the hammer with tape.
-	\item Plug the output line from the reflex hammer into channel 1 of the MP3X unit. The signal from the reflex hammer record the impact of the hammer with a surface.
-	\item Plug the electrode lead set (SS2L) into channel 2. The signal from the electrodes records the EMG of the muscle activity.
-	\item Turn the MP3X unit on.
-	\item Open BIOPAC student lab lessons	software and selection L20 - Spinal Cord Reflexes (see Fig. \ref{lesson})
+	\item Open BIOPAC student lab lessons software and select \textit{L20} (see Fig. \ref{lesson}).
 	
 		\begin{figure}[h]
 		\centering
@@ -91,65 +86,11 @@ This entire system can be generalized as a control system in which a regulated v
 		\caption{Select lesson L20 - Spinal Cord Reflexes}
 		\label{lesson}
 		\end{figure}
-	
-	\item Type in your file name in the pop-up window. If a pop-up window appears asking if an existing folder should be used or a new folder should be created, select "Use It."
+	\item Plug the output line from the reflex hammer into channel 1 of the MP3X unit. The signal from the reflex hammer record the impact of the hammer with a surface.
+	\item Plug the electrode lead set (SS2L) into channel 2. The signal from the electrodes records the EMG of the muscle activity.
 \end{enumerate}
 
-\section*{Ankle Jerk Reflex}
-\begin{enumerate}
-	\item Place two electrodes on the upper backside of the calf muscle, approximately 5 inches away from each other (Fig. \ref{ankle}).
-		\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.6\textwidth]{../images/EMG_II_4.jpg}	
-		\caption{Electrode positioning for ankle jerk reflex}
-		\label{ankle}
-		\end{figure}
-	
-		\begin{itemize}
-			\item Red (+): closest to knee
-			\item White (-): middle of calf
-			\item Black (ground): inside of ankle
-		\end{itemize}
-	
-	\item Click the "Calibrate" button located in the upper left corner of the Setup window.
-	\item A pop-up window will open confirming that the subject is positioned properly (Fig. \ref{calibration}). Make sure the subject is relaxed and the hammer is placed on a flat surface.
-		\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.8\textwidth]{../images/EMG_II_5.jpg}	
-		\caption{Calibration procedure}
-		\label{calibration}
-		\end{figure}
-		
-	\item When the subject is ready, click "OK" to start the calibration recordings.
-	\item During the calibration procedure, start with a relaxed muscle and the hammer on a flat surface, then strike the hammer \textbf{lightly} in the table 2-3 times and flex your muscle of interest 2-3 times.
-	\item The calibration procedure will stop automatically after 12 seconds. At the end of the calibration recording, the screen should resemble Fig. \ref{calibration2}.
-		\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.8\textwidth]{../images/EMG_II_6a.jpg}
-		\includegraphics[width=0.8\textwidth]{../images/EMG_II_6b.jpg}	
-		\caption{Calibration procedure - final view}
-		\label{calibration2}
-		\end{figure}
-
-	\item If the data resembles Fig. \ref{calibration2}, proceed to the Data Recording Session. Otherwise, recheck connections and click Redo Calibration.
-	\item Select "Record" when you are ready to start recording.
-	\item Strike the Achilles tendon behind the ankle just above the heel and observe the resulting muscle contraction.
-	\item Continue recording and repeat the strike on the Achilles tendon 15-20 times, as necessary, to get consistent data.
-	\item Click on the "Suspend" button to pause or stop recording.
-	\item Repeat steps 8-11 to measure the voluntary reaction time. Without the subject looking, lightly hit the reflex hammer against a table and have the subject voluntarily jerk their ankle in response to the sound.
-	\item When you are finished, click "Done."
-	\begin{warn}
-		You will not be able to take additional measurements	 after this step, so make sure you have all the tests you need.
-	\end{warn}
-	\item From the pop-up window, selection "Analyze current data file."
-	\item The reaction time is determined by selecting the desired time interval with the "I" cursor and reading "delta T" from the screen. Reaction time is measured from \textit{onset} of hammer strike to \textit{onset} of EMG activity.
-	\item Determine the reaction times for each strike and record them on your handout. Calculate the mean and standard deviation for each condition.
-	\item Is there a significant difference between the reflex reaction time and the voluntary reaction time? Conduct a statistical test to determine if there is a statistically significant difference. Explain your procedure and calculations. Give a physiological explanation for your results.
-	\item When you are finished analyzing your data, select "Quit" from the File menu to exit the program.
-\end{enumerate}
-
-\section*{Knee Jerk Reflex}
-\subsection*{Regular Procedure}
+\subsection*{Calibration}
 \begin{enumerate}
 	\item Place two electrodes on the quadriceps muscle on the front of the thigh, approximately 10 cm apart (Fig. \ref{knee}). Connect the leads as described below:
 		\begin{itemize}
@@ -164,17 +105,20 @@ This entire system can be generalized as a control system in which a regulated v
 		\caption{Electrode positioning for knee jerk reflex}
 		\label{knee}
 		\end{figure}
-	
+
+	\item Click the \textit{Calibrate} button after reading through the prompts.
+	\item Make sure the subject is relaxed and the hammer is placed on a flat surface. When the subject is ready, click \textit{OK} to start the calibration recordings.
+	\item During the calibration procedure, start with a relaxed muscle and the hammer on a flat surface, then strike the hammer \textbf{lightly} in the table 2-3 times and flex your muscle of interest 2-3 times.
+	\item The calibration procedure will stop automatically after 12 seconds. If the data resembles the plot on screen, proceed to the next section. Otherwise, recheck connections and click \textit{Redo Calibration}.
+\end{enumerate}
+
+\subsection*{Regular Procedure}
+\begin{enumerate}	
 	\item Have the subject sit with their legs hanging freely over the edge of the chair.
-	\item Follow the instructions previously described under "Setting Up the Software."
-	\item Click the "Calibrate" button located in the upper left corner of the Setup window.
-	\item A pop-up window will open confirming that the subject is positioned properly. Make sure that the subject is relaxed and the hammer is placed on a flat surface.
-	\item When the subject is ready, click "OK" to start the calibration recordings. The calibration procedure will stop automatically after 12 seconds.
-	\item During the calibration, lightly strike the hammer 2-3 times and flex your muscle of interest. Check to see if the resulting data resembles Fig. \ref{calibration2}. If not, recheck connections and repeat.
-	\item Select "Record" when you are ready to start recording.
+	\item Select \textit{Record} when you are ready to start recording.
 	\item Strike the patellar ligament on the knee and observe the resulting reflex contraction.
 	\item Continue recording and repeat the strike on the patellar ligament 15-20 times, as necessary, to get consistent data.
-	\item Click on the "Suspend" button to pause or stop recording.
+	\item Click on the \textit{Suspend} button to pause or stop recording.
 	\item Determine the reaction times for each strike and record them on your handout. Additionally, determine the magnitude of the hammer strike and the EMG pulse for each strike. For all three measurements, calculate the mean and standard deviation.
 	\item Is there a relationship between hammer strike force and reaction time? Explain.
 	\item Is there are relationship between hammer strike force and the magnitude of the muscle response? Explain.
@@ -195,8 +139,8 @@ This entire system can be generalized as a control system in which a regulated v
 		\label{jendrassik}
 		\end{figure}
 
-	\item Conduct the procedure given in steps 8-11 of the previous section to collect the necessary data.
-	\item From the pop-up window, select "Analyze current data file."
+	\item Conduct the procedure given in the previous section to collect the necessary data.
+	\item When you are done, select \textit{Analyze current data file.}
 	\item Determine the reaction times for each strike and record them on your handout. Additionally, determine the magnitude of the hammer strike and the EMG pulse for each strike. For all three measurements, calculate the mean and standard deviation.
 	\item How do the reaction times during the Jendrassik maneuver compare to the regular procedure? Explain the change or lack of change.
 	\item How do the muscle response magnitudes during the Jendrassik maneuver compare to the regular procedure? Recall the negative feedback diagram (Fig. \ref{feedback}). Which variable do you think has changed?
