@@ -23,16 +23,12 @@
 \maketitle
 \large
 
-\begin{info}
-	The data for this lab can be found ()
-\end{info}
+A student was curious about the relationship between resting heart rate and age. To investigate, they collected resting heart data from 20 people and had them report their age. The resulting data can be found \href{https://jameslong12.github.io/BIOE320/Assignments.html}{here}. Conduct the necessary statistical test to determine if there is a relationship between resting heart rate and age.
 
 \begin{enumerate}
-	\item Write a simple program to take data from HeartRate.xls and determine the heart rate of this ECG recording (sampling rate = 1000 Hz). You should use a design called a peak detector; using this tool, a beat is recorded when the signal crosses a certain threshold value. You may use Matlab, Python, Excel, or another program. Attach an annotated copy of your program. Give the heart rate for the period.
-	\item A common problem in clinical practice is the false positive alarms with heart monitors. A noisy signal can falsely signal a tachycardia alarm while a loose electrode or an alarm threshold set too high can likewise signal a bradycardia alarm.
-	\begin{enumerate}
-		\item Design a detector that will not be too sensitive to false readings by developing an equation or algorithm with which the detector will process the incoming data. The sampling algorithm should process and use recent data as well as the "last" heart beat. Over what time interval should the algorithm incorporate data to calculate a running heart rate? Should all heartbeats be weighed equally in determining a reported rate?
-		\item Suppose that a patient's heart stops beating. How long will it take for your detector to "notice"? In light of this response time, evaluate the safety of your design. Consider logistics such as nurse/doctor response time, the length of time once a person's heart stops beating until irreparable damage occurs, etc?
-	\end{enumerate}
+	\item Perform a linear regression on this data and state the equation of best fit. Explain your work.
+	\item What percentage of the variance is explained by the regression line? What percentage of the variance is unexplained by the regression line?
+	\item Based on this regression, do you think there is a meaningful correlation between resting heart rate and age? You do not need to perform a statistical test, but you must briefly justify.
+	\item Identify at least one problem with the data collection method and how it may be corrected for better results. Hint: visualize the data.
 \end{enumerate}
 \end{document}
