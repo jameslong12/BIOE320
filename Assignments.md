@@ -12,5 +12,5 @@ title: "Assignments"
 | Week 6: Electrocardiography (ECG) II | [Link](prelabs/week_6_ECG_II.pdf) | [Link](inlabs/week_6_ECG_II.pdf) | [Link](inlabs/week_6_ECG_II_assignment.pdf) | [Link](postlabs/week_6_ECG_II.pdf) |
 | Week 7: Blood Pressure (BP) | [Link](prelabs/week_7_BP.pdf) | [Link](inlabs/week_7_BP.pdf) | [Link](inlabs/week_7_BP_assignment.pdf) | [Link](postlabs/week_7_BP.pdf), [Data set](data/week_7_BP.csv) |
 | Week 8: Pulmonary Function (PF) I | [Link](prelabs/week_8_PF_I.pdf) | [Link](inlabs/week_8_PF_I.pdf) | [Link](inlabs/week_8_PF_I_assignment.pdf) | [Link](postlabs/week_8_PF_I.pdf) |
-| Week 9: Pulmonary Function (PF) II | [Link](prelabs/week_9_PF_II.pdf) | [Link](inlabs/week_9_PF_II.pdf) | [Link](inlabs/week_9_PF_II_assignment.pdf) | [Link](postlabs/week_9_PF_II.pdf) |
+| Week 9: Pulmonary Function (PF) II | [Link](prelabs/week_9_PF_II.pdf) | [Link](inlabs/week_9_PF_II.pdf) | [Link](inlabs/week_9_PF_II_assignment.pdf) | [Link](postlabs/week_9_PF_II.pdf), [Data set](data/week_9_PF_II.csv) |
 | Week 10: Electrooculography (EOG) | [Link](prelabs/week_10_EOG.pdf) | [Link](inlabs/week_10_EOG.pdf) | [Link](inlabs/week_10_EOG_assignment.pdf) | N/A |
