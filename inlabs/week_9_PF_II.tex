@@ -35,7 +35,7 @@
 \subsection*{Dead Space}
 Defined as the volume of gas that does not participate in gas exchange.
 \begin{itemize}
-	\item Anatomical dead space (~150 mL) results from the dead space in the conducting airways (trachea, bronchi, and bronchioles). The air in the conducting airways does not reach the alveoli and, as a result, does not participate in gas exchange.
+	\item Anatomical dead space (about 150 mL) results from the dead space in the conducting airways (trachea, bronchi, and bronchioles). The air in the conducting airways does not reach the alveoli and, as a result, does not participate in gas exchange.
 	\item Alveolar dead space (very small in healthy subjects) results from poor perfusion to the alveoli. When blood perfusion is limited, some alveoli (even when they contain air) will not participate in gas exchange.
 	\item Physiological dead space is the sum of the anatomical and alveolar dead space and it represents the volume of air that is inspired but does not participate in gas exchange with blood flowing through the lungs.
 \end{itemize}
@@ -101,63 +101,39 @@ In addition to partial pressure gradients, there are several factors that can in
 
 \subsection*{Calibration}
 \begin{enumerate}
-	\item Open file H19rer.gtl, which can be downloaded from the course website.
-	\item Pump calibration syring 15-20 times to flush Gas-System2 chamber with ambient air.
-	\item Change acquisition length (Fig. \ref{calibration}).\begin{enumerate}
-	\item Select MP3X from the menu at the top of the screen.
-	\item Choose Setup Acquisition.
-	\item Enter 100 samples/second under sample rate.
-	\item Change the acquisition length to 60 minutes.
-	\end{enumerate}
-	\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_4.jpg}
-	\caption{Set up acquisition window}
-	\label{calibration}
-	\end{figure}
-	
-	\item Select MP3X from the menu bar, then select Setup Channels. Click the checkboxes such that it mirrors Fig. \ref{calibration2}.
-	\begin{figure}[h]
-	\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_5.jpg}
-	\caption{Setup Channels window for MP3X}
-	\label{calibration2}
-	\end{figure}
+	\item Open BIOPAC student lab lessons software and select \textit{H19 - VO2 and RER} (located under PRO lessons).
+	\item Pump calibration syringe 15-20 times to flush Gas-System2 chamber with ambient air.
+	\item Select \textit{MP3X} from the menu bar at the top of the screen, then choose \textit{Set Up Data Acquisition}.
+	\item Make sure the sampling rates of all three channels are set to 100 Hz. Check all boxes (Acquire, Plot, and Value) for channels 1, 2, and 3. 
 	
 	\item Calibrate airflow (channel 1).\begin{enumerate}
-	\item Click on wrench icon for channel 1.
-	\item Click on the Scaling button to arrive to Change Scaling Parameters.
-	\item Hold airflow transducer still and upright and press Cal1 button.
-	\item Subtract 3000 from Cal1 value and enter as Cal2 input value field.
-	\item Check Cal1 scale value is zero and Cal2 value is 10.
-	\item Click OK twice to return to Setup Channels window.
+	\item Select row 1 (Airflow) and click \textit{Setup} in the top right corner of the window.
+	\item Click \textit{Scaling} at the bottom of the pop up window.
+	\item Hold airflow transducer still and upright and press \textit{Cal 1} button.
+	\item Subtract 3000 from \textit{Cal 1} value and enter as \textit{Cal 2} input value field.
+	\item Check \textit{Cal 1} Map value is zero and \textit{Cal 2} value is 10.
+	\item Click \textit{OK} twice to exit.
 	\end{enumerate}
 	
 	\item Calibrate O\textsubscript{2} (channel 2).
 	\begin{enumerate}
-		\item Click on wrench icon for channel 2.
-		\item Click on Scaling button.
-		\item Click on Cal2 button.
-		\item Enter value 20.93 as Cal2 scale value.
-		\item Confirm that both Cal1 input value and Cal1 scale value are zero.
-		\item Click OK twice to return to Setup Channels window.
+		\item Select row 2 (O2e) and click \textit{Setup} in the top right corner of the window.
+	\item Click \textit{Scaling} at the bottom of the pop up window.
+	\item Click on \textit{Cal 2} button.
+		\item Enter value 20.93 as \textit{Cal 2} Map value.
+		\item Confirm that both \textit{Cal 1} input value and \textit{Cal 1} Map value are zero.
+	\item Click \textit{OK} twice to exit.
 	\end{enumerate}
 	
 	\item Calibration CO\textsubscript{2} (channel 3).
 	\begin{enumerate}
-		\item Click on wrench icon for channel 3.
-		\item Click on Scaling button.
-		\item Click on Cal1 button.
-		\item Enter value 0.04 as Cal1 scale value field.
-		\item Add 10 to Cal1 input value and enter as Cal2 input value.
-		\item Check Cal2 scale value is 1.04.
-		\item Click OK twice to return to Setup Channels window.
-	\end{enumerate}
-	
-	\item Calibrate for gas normalization.
-	\begin{enumerate}
-		\item Click on wrench icon for C3 Vis (STPD).
-		\item Update the formula to read C2*(898). This is the normalization factor for gas at an assumed 72\degree F.
-		\item Click OK to return to Setup Chanels window.
-		\item When done calibrating channels, press OK to return to principal window.
+		\item Select row 3 (CO2e) and click \textit{Setup} in the top right corner of the window.
+	\item Click \textit{Scaling} at the bottom of the pop up window.
+	\item Click on \textit{Cal 1} button.
+		\item Enter value 0.04 as \textit{Cal 1} Map value.
+		\item Add 10 to \textit{Cal 1} input value and enter as \textit{Cal 2} input value.
+		\item Set \textit{Cal 2} scale value to 1.04.
+	\item Click \textit{OK} twice to exit.
 	\end{enumerate}
 \end{enumerate}
 
@@ -167,7 +143,7 @@ In addition to partial pressure gradients, there are several factors that can in
 	\item Before every trial, pump calibration syringe 15-20 times to flush the mixing chamber with ambient air.
 	\item While recording, hold airflow apparatus very still parallel to floor. Make sure to keep the airflow transducer handle perpendicular to floor.
 	\item Begin every recording with inhalation and end with exhalation. This will prevent receiving O\textsubscript{2} inspiration values less that that of total expiration.
-	\item Record for a few second without breathing at the beginning of each experiment to ensure that the baselines are correct. Hit the vertical autoscale button, as needed, to confirm the magnitude of the baseline traces. If baseline values are not correct, stop and troubleshoot.
+	\item Record for a few seconds without breathing at the beginning of each experiment to ensure that the baselines are correct. Hit the vertical autoscale button, as needed, to confirm the magnitude of the baseline traces. If baseline values are not correct, stop and troubleshoot.
 	\item Replace calibration syringe with AFT1 filter and AFT2 mouthpiece (Fig. \ref{syringe}).
 	\begin{figure}[h]
 	\centering\includegraphics[width=0.6\textwidth]{../images/PF_II_8.jpg}

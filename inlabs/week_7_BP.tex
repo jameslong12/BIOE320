@@ -75,8 +75,12 @@ In this lab, you will use Korotkoff sounds to measure systolic and diastolic art
 \subsection*{Hardware and Software Setup}
 \begin{enumerate}
 	\item 
-	
+	This needs to match week 6!
 	Open the BIOPAC Lab PRO software (NOT BIOPAC student lessons).
+	
+	
+	
+	
 	\item Plug the blood pressure cuff into channel 1 of the MP3X unit.
 	\item Plug the stethoscope into channel 2.
 	\item Plug the ECG leads into channel 3.
@@ -86,7 +90,13 @@ In this lab, you will use Korotkoff sounds to measure systolic and diastolic art
 		\item Black (ground): right ankle
 	\end{itemize}
 	\item Turn the MP3X unit on.
-	\item Go to the MP3X pull down menu and select Setup Channels.
+	\item \item Open BIOPAC student lab lessons software and select \textit{Create/Record a new experiment}, and underneath it, \textit{Create empty graph} (Fig. \ref{menu}).
+		\begin{figure}[h]
+	\centering\includegraphics[width=0.6\textwidth]{../images/ECG_II_9.png}
+		\caption{Creating a new BIOPAC experiment}
+		\label{menu}
+		\end{figure}
+
 	\begin{enumerate}
 		\item Check all the boxes for channels 1, 2, and 3 (Fig. \ref{setup}).
 		\item Click on presets and set each channel to:\begin{itemize}
@@ -105,21 +115,17 @@ In this lab, you will use Korotkoff sounds to measure systolic and diastolic art
 
 \subsection*{Calibrate Blood Pressure Cuff}
 \begin{enumerate}
-	\item Under Setup Channels, click on the wrench to the right of channel 1 (blood pressure).
-	\item A new menu should appear, click on scaling at the bottom of the menu.
+	\item Select the first row (\textit{Blood Pressure Cuff}) and click on \textit{Setup} in the top right.
+	\item Click \textit{Scaling} at the bottom of the pop up window.
+
 	\item Deflate the cuff completely by loosening the screw attached to the sphygmomanometer so that it displays 0 mmHg. Make sure the subject is not connected to the pressure cuff.
 	\item Click on Cal1, the input value should now be a value close to 0 mV.
 	\item Tighten the screw to close the valve and pump to inflate the cuff to 100 mmHg.
 	\item Click on Cal2, the input value should now be a value close to 2.5 mV.
+	\item Before exiting the window, make sure the Map values are set to 0 and 100 mmHg, respectively. Click \textit{OK} to exit.
 \end{enumerate}
 
-\subsection*{Acquisition Setup}
-\begin{enumerate}
-	\item Go to the MP3X pull down menu and select Setup Acquistion.
-		\item Set Sample to 2000 samples/sec.
-		\item Set Acquisition Length to 60 minutes.
-		\item Close the box.
-\end{enumerate}
+
 
 \subsection*{Measuring Systolic and Diastolic Blood Pressures}
 We will be using the stethoscope to listen for Korotkoff sounds at the brachial artery, which will allow us to determine the systolic and diastolic blood pressures. Because finding the brachial artery and properly adjusting the pressure of the cuff can be tricky, we will begin with a warm up trial.
